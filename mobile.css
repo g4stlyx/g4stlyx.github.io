@@ -6,20 +6,10 @@
     height: 80px;
 }
 
-#forum .items{
-    flex-direction: column;
-}
+#main img{
+    width: 340px ;
+    height 114px;
 
-#forum .items .item{
-    width: 100%;
-}
-
-.courses .course{
-    flex-direction: column;
-}
-
-.courses .course .course-image{
-    margin-bottom: 1rem;
 }
 
 
