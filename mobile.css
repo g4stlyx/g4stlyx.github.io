@@ -6,8 +6,9 @@
     height: 80px;
 }
 
-#welcome{
-    width: 100%;
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 
