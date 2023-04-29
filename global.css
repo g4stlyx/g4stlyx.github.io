@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.heading-very-small{
+    font-size: 0.75rem;
+}
+
 .heading-small {
     font-size: 1.25rem;
 }
