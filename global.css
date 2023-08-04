@@ -35,7 +35,7 @@
 }
 
 .bg-red{
-    background:red;
+    background:rgb(221, 14, 14);
 }
 
 /* Buttons */
@@ -45,6 +45,7 @@
     padding:0.6rem 1.8rem;
     border-radius: 5px;
     letter-spacing: 0.5px;
+    background:rgb(221, 14, 14) !important;
 }
 
 .btn:hover{
