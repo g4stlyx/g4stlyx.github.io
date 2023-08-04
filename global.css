@@ -31,7 +31,7 @@
 }
 
 .bg-light-red{
-    background:rgb(216, 25, 25) ;
+    background:rgb(221, 14, 14) ;
 }
 
 .bg-red{
@@ -53,13 +53,13 @@
 }
 
 .btn-red{
-    background:rgb(216, 25, 25);
+    background:rgb(221, 14, 14);
 }
 
 .btn-red:hover{
     background:black;
-    color:red;
-    border: 1px solid red ;
+    color:rgb(221, 14, 14);
+    border: 1px solid rgb(221, 14, 14) ;
 }
 
 .btn-dark-red{
