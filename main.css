@@ -90,20 +90,24 @@ html{
     border: 1px solid rgb(221, 14, 14) ;
 }
 
+
+
 /* Mainpage */
 
 #main{
-    background-color: rgb(15, 17, 19);
+    background-color: rgb(15, 17, 19) !important;
 }
 
-.latest-projects{
-    margin-top:40px;
-    margin-bottom:20px;
+#main .latest-projects{
+    margin-top:40px !important;
+    margin-bottom:20px !important;
 }
 
-.about-text{
+#main .about-text{
     color:rgb(221, 14, 14) !important;
 }
+
+
 
 /* Footer/ Contact Section*/
 
