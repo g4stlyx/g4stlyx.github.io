@@ -1,378 +1,763 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Sefa Ağardan, an Istanbul Arel University Computer Engineering student specializing in Backend (Java Spring Boot, ExpressJS) and Frontend (ReactJS, Flutter) development. Explore projects and contact info.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Sefa Ağardan, an Istanbul Arel University Computer Engineering student specializing in Backend (Java Spring Boot, ExpressJS) and Frontend (ReactJS, Flutter) development. Explore projects and contact info."
+    />
     <title>G4stLy | Sefa AĞARDAN</title>
-    
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://g4stly.tr/" />
+
+    <!-- !Open Graph Meta Tags, more seo stuff -->
+    <meta
+      property="og:title"
+      content="G4stLy | Sefa AĞARDAN"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Sefa Ağardan, Computer Engineering student specializing in Java Spring Boot, ExpressJS, ReactJS, Flutter. Explore projects and contact info."
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://g4stly.tr/assets/portfolio-preview.jpg"
+    /> -->
+    <meta property="og:url" content="https://g4stly.tr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+
     <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- !SEO stuff -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Sefa Ağardan",
-          "url": "https://g4stly.tr", // Replace with your actual URL
-          "jobTitle": "Computer Engineering Student",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Istanbul Arel University"
-          },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Istanbul Arel University"
-          },
-          "knowsAbout": ["Java Spring Boot", "Java", "Javascript" , "ExpressJS", "ReactJS", "Flutter", "Backend Development", "Frontend Development", "Full-Stack Development", "Software Engineering", "C", "C++", "Python", "Typescript", "Bootstrap", "Image Processing"],
-          "sameAs": [
-            "https://www.linkedin.com/in/sef4/",
-            "https://github.com/g4stlyx",
-            "https://www.instagram.com/sefa.js",
-            "https://tryhackme.com/r/p/g4stly"
-          ]
-        }
-        </script>
-</head>
-<body>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sefa Ağardan",
+        "url": "https://g4stly.tr", // Replace with your actual URL
+        "jobTitle": "Computer Engineering Student",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Istanbul Arel University"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Istanbul Arel University"
+        },
+        "knowsAbout": [
+          "Java Spring Boot",
+          "Java",
+          "Javascript",
+          "ExpressJS",
+          "ReactJS",
+          "Flutter",
+          "Backend Development",
+          "Frontend Development",
+          "Full-Stack Development",
+          "Software Engineering",
+          "C",
+          "C++",
+          "Python",
+          "Typescript",
+          "Bootstrap",
+          "Image Processing"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/sef4/",
+          "https://github.com/g4stlyx",
+          "https://www.instagram.com/sefa.js",
+          "https://tryhackme.com/r/p/g4stly"
+        ]
+      }
+    </script>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="name">G4stLy the Lord</div>
-                <nav>
-                    <a href="#backend">Backend</a>
-                    <a href="#frontend">Frontend</a>
-                    <a href="#others">Others</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="header-content">
+          <div class="name">G4stLy the Lord</div>
+          <nav>
+            <a href="#backend">Backend</a>
+            <a href="#frontend">Frontend</a>
+            <a href="#others">Others</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
+      </div>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h1>Sefa Ağardan</h1>
-            <h2>Computer Engineering Student in Istanbul Arel University (3/4)</h2>
-            <br>
-            <p>Although focused on backend (Java Spring Boot, ExpressJS) lately, I develop frontend applications too using ReactJS, ElectronJS, and Flutter.</p>
-            <p>You can see more projects on my github page.</p>
-        </div>
+      <div class="container">
+        <h1>Sefa Ağardan</h1>
+        <h2>Computer Engineering Student in Istanbul Arel University (3/4)</h2>
+        <br />
+        <p>
+          Although focused on backend (Java Spring Boot, ExpressJS) lately, I
+          develop frontend applications too using ReactJS, ElectronJS, and
+          Flutter.
+        </p>
+        <p>You can see more projects on my github page.</p>
+      </div>
     </section>
 
     <section id="backend" class="projects">
-        <div class="container">
-            <h2 class="section-title">Backend Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>E-Commerce Full Stack</h3>
-                    <p>Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit tests, validations, auth, security, responsive design, documentation with Swagger API...</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/eCommerceFullStack" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>Todo App Full Stack</h3>
-                    <p>Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit tests, validations, auth, security, responsive design, documentation with Swagger API...</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/todoFullStack" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>E-Commerce API</h3>
-                    <p>coded with ExpressJS and NodeJS. CRUD for different classes, auth, security, JWT tokens...</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://ecommerceapi-zwqi.onrender.com/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Docs
-                        </a>
-                        <a href="https://github.com/g4stlyx/eCommerceAPI/" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>Jobster (full stack)</h3>
-                    <p>ExpressJS + ReactJS. contains login,register, and CRUD functionality.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://jobster-api-1yfd.onrender.com/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Docs
-                        </a>
-                        <a href="https://github.com/g4stlyx/jobsterAPI" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>Jobs API (dont remember doing it)</h3>
-                    <p>created by/with expressJS. contains register/login functionality, authentication check, jobs and users etc.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://jobs-api-qomp.onrender.com/api-docs/#/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Docs
-                        </a>
-                        <a href="https://github.com/g4stlyx/jobsAPI" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Backend</span>
-                    <h3>Store API (dont remember doing it)</h3>
-                    <p>an api that you can operate searching, filtering, sorting, and paginating data fetched from database. created with expressJS.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/storeAPI" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Backend Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>E-Commerce Full Stack</h3>
+            <p>
+              Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
+              tests, validations, auth, security, responsive design,
+              documentation with Swagger API...
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/eCommerceFullStack"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Todo App Full Stack</h3>
+            <p>
+              Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
+              tests, validations, auth, security, responsive design,
+              documentation with Swagger API...
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/todoFullStack"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>E-Commerce API</h3>
+            <p>
+              coded with ExpressJS and NodeJS. CRUD for different classes, auth,
+              security, JWT tokens...
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://ecommerceapi-zwqi.onrender.com/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Docs
+              </a>
+              <a
+                href="https://github.com/g4stlyx/eCommerceAPI/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Jobster (full stack)</h3>
+            <p>
+              ExpressJS + ReactJS. contains login,register, and CRUD
+              functionality.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://jobster-api-1yfd.onrender.com/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Docs
+              </a>
+              <a
+                href="https://github.com/g4stlyx/jobsterAPI"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Jobs API (dont remember doing it)</h3>
+            <p>
+              created by/with expressJS. contains register/login functionality,
+              authentication check, jobs and users etc.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://jobs-api-qomp.onrender.com/api-docs/#/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Docs
+              </a>
+              <a
+                href="https://github.com/g4stlyx/jobsAPI"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Store API (dont remember doing it)</h3>
+            <p>
+              an api that you can operate searching, filtering, sorting, and
+              paginating data fetched from database. created with expressJS.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/storeAPI"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="frontend" class="projects">
-        <div class="container">
-            <h2 class="section-title">Frontend Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>Pokedex + Pokemon Battles</h3>
-                    <p>Have 3 pages(pokemons, details, battles). Used pokeapi.co, html, css, bootstrap, and vanilla JS.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://g4stly.tr/pokedex/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/g4stlyx/pokedex" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>Instagram Clone</h3>
-                    <p>You can see 5 main pages of the homepage of instagram (home, explore, reels, messages, profile). responsive, used ReactJS.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="http://instagram.g4stly.tr" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/g4stlyx/instagramClone" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>Facebook Clone</h3>
-                    <p>You can see 5 main pages of the homepage of facebook (home, friends, video, marketplace, gaming). responsive, used ReactJS.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="http://facebook.g4stly.tr" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/g4stlyx/facebookClone" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>AI Super App, Flutter -mobile-</h3>
-                    <p>Contains several ai-powered features like: chatbots (both using gemini and openai), face analysis(emotion ,age, gender recognition), document translation etc.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/ai_super_app" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>templateWebApp</h3>
-                    <p>i created it to use as a template for my future projects. responsive, used ReactJS, Typescript.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/templateWebApp" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>Collaborative Todo App</h3>
-                    <p>Register, login, adding friends, sharing todos. Could be transformed into something like Notion (by converting todos to pages). Typescript & Firebase.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/collaborative-todo-app" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>g4Cafe cafe/menu</h3>
-                    <p>cafe/menu website. react</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://g4stly.tr/g4Cafe/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/g4stlyx/g4Cafe" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>g4Clothing e-commerce</h3>
-                    <p>e-commerce website focused on clothing.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://g4stly.tr/g4Clothing/" target="_blank" style="display: inline-block; margin-right: 1rem; text-decoration: none; color: #3498db;">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/g4stlyx/g4Clothing" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>Photo Search App (i dont remember doing it)</h3>
-                    <p>Photo Search App created with React and Unsplash API.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/photoSearchReact" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>SnapShot (i dont remember doing it)</h3>
-                    <p>search images using Flickr API. ReactJS is used.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/snapShot" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Frontend</span>
-                    <h3>g4Store (i dont remember doing it)</h3>
-                    <p>An e-commerce website template written in ReactJS and Redux.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/g4StoreReact" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Frontend Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>Pokedex + Pokemon Battles</h3>
+            <p>
+              Have 3 pages(pokemons, details, battles). Used pokeapi.co, html,
+              css, bootstrap, and vanilla JS.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://g4stly.tr/pokedex/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/g4stlyx/pokedex"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>Instagram Clone</h3>
+            <p>
+              You can see 5 main pages of the homepage of instagram (home,
+              explore, reels, messages, profile). responsive, used ReactJS.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="http://instagram.g4stly.tr"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/g4stlyx/instagramClone"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>Facebook Clone</h3>
+            <p>
+              You can see 5 main pages of the homepage of facebook (home,
+              friends, video, marketplace, gaming). responsive, used ReactJS.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="http://facebook.g4stly.tr"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/g4stlyx/facebookClone"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>AI Super App, Flutter -mobile-</h3>
+            <p>
+              Contains several ai-powered features like: chatbots (both using
+              gemini and openai), face analysis(emotion ,age, gender
+              recognition), document translation etc.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/ai_super_app"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>templateWebApp</h3>
+            <p>
+              i created it to use as a template for my future projects.
+              responsive, used ReactJS, Typescript.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/templateWebApp"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>Collaborative Todo App</h3>
+            <p>
+              Register, login, adding friends, sharing todos. Could be
+              transformed into something like Notion (by converting todos to
+              pages). Typescript & Firebase.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/collaborative-todo-app"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>g4Cafe cafe/menu</h3>
+            <p>cafe/menu website. react</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://g4stly.tr/g4Cafe/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/g4stlyx/g4Cafe"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>g4Clothing e-commerce</h3>
+            <p>e-commerce website focused on clothing.</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://g4stly.tr/g4Clothing/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  margin-right: 1rem;
+                  text-decoration: none;
+                  color: #3498db;
+                "
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="https://github.com/g4stlyx/g4Clothing"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>Photo Search App (i dont remember doing it)</h3>
+            <p>Photo Search App created with React and Unsplash API.</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/photoSearchReact"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>SnapShot (i dont remember doing it)</h3>
+            <p>search images using Flickr API. ReactJS is used.</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/snapShot"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Frontend</span>
+            <h3>g4Store (i dont remember doing it)</h3>
+            <p>An e-commerce website template written in ReactJS and Redux.</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/g4StoreReact"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="others" class="projects">
-        <div class="container">
-            <h2 class="section-title">Other Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>Lecture Content Fetcher, py script</h3>
-                    <p>It goes to arel uzem website, logs in, checks courses for downloadable lecture contents. if sees any new content, downloads them to the related folder.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/lecture_content_fetcher" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>Vulnerability Scanner, py script</h3>
-                    <p>Options: whois and IP information lookup, path scanning, reverse lookup for websites on the same server, OWASP top 10 scanning (sql & xss injection etc.) <br> Scans for these and creates a markdown (.MD) report.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/vulnerability_scanner/" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>Arcade Games App</h3>
-                    <p>Super app containing several arcade games re-coded in Python using Pygame. Contains: Space Invaders, Snake, Pacman, Tetris, Flappy Bird.</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/arcade_games_app" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>uniManagement Java</h3>
-                    <p>object oriented programmed university management system; includes students, instructors and an admin</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/uniManagement" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>ticTacToeJava (dont remember doing it)</h3>
-                    <p>tic-tac-toe coded with Java,Swing to practise it</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/ticTacToeJava" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>Space-Invaders</h3>
-                    <p>a bit different version of a classical arcade game</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/Space-Invaders" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <span class="category-label">Other</span>
-                    <h3>turkeyInvaders</h3>
-                    <p>"extremely" different version of a classical arcade game Space Invaders</p>
-                    <div class="project-links" style="margin-top: 1rem;">
-                        <a href="https://github.com/g4stlyx/turkeyInvaders" target="_blank" style="display: inline-block; text-decoration: none; color: #2c3e50;">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Other Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>Lecture Content Fetcher, py script</h3>
+            <p>
+              It goes to arel uzem website, logs in, checks courses for
+              downloadable lecture contents. if sees any new content, downloads
+              them to the related folder.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/lecture_content_fetcher"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
             </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>Vulnerability Scanner, py script</h3>
+            <p>
+              Options: whois and IP information lookup, path scanning, reverse
+              lookup for websites on the same server, OWASP top 10 scanning (sql
+              & xss injection etc.) <br />
+              Scans for these and creates a markdown (.MD) report.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/vulnerability_scanner/"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>Arcade Games App</h3>
+            <p>
+              Super app containing several arcade games re-coded in Python using
+              Pygame. Contains: Space Invaders, Snake, Pacman, Tetris, Flappy
+              Bird.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/arcade_games_app"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>uniManagement Java</h3>
+            <p>
+              object oriented programmed university management system; includes
+              students, instructors and an admin
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/uniManagement"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>ticTacToeJava (dont remember doing it)</h3>
+            <p>tic-tac-toe coded with Java,Swing to practise it</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/ticTacToeJava"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>Space-Invaders</h3>
+            <p>a bit different version of a classical arcade game</p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/Space-Invaders"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Other</span>
+            <h3>turkeyInvaders</h3>
+            <p>
+              "extremely" different version of a classical arcade game Space
+              Invaders
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/turkeyInvaders"
+                target="_blank"
+                style="
+                  display: inline-block;
+                  text-decoration: none;
+                  color: #2c3e50;
+                "
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Contact Information</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/sef4/" class="linkedin" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/g4stlyx" class="github" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/sefa.js" class="instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://tryhackme.com/r/p/g4stly" class="tryhackme" target="_blank">
-                    <i class="fas fa-user-secret"></i>
-                </a>
-            </div>
+      <div class="container">
+        <h2 class="section-title" style="color: white">Contact Information</h2>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/sef4/"
+            class="linkedin"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/g4stlyx" class="github" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/sefa.js"
+            class="instagram"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://tryhackme.com/r/p/g4stly"
+            class="tryhackme"
+            target="_blank"
+          >
+            <i class="fas fa-user-secret"></i>
+          </a>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 G4stLy. No rights reserved, it's created using POE in like 10 mins.</p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 G4stLy. No rights reserved, it's created using POE in like
+          10 mins.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
