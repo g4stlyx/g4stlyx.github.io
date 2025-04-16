@@ -40,8 +40,9 @@ header {
     text-decoration: none;
 }
 
-.name:hover {
-    color: #3498db;
+.name:visited , .name:active {
+    color: white inherit;
+    text-decoration: none;
 }
 
 nav a {
@@ -51,7 +52,7 @@ nav a {
     transition: color 0.3s;
 }
 
-nav a:hover {
+nav a:hover, .name:hover {
     color: #3498db;
 }
 
