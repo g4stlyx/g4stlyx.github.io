@@ -613,6 +613,84 @@ nav a:focus,
     outline-color: #64b5f6;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--card-bg);
+    min-width: 180px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    color: var(--text-primary) !important;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    display: block;
+    margin: 0 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.dropdown-menu a::after {
+    content: none; /* Remove the underline that's applied to nav links */
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: var(--accent-color) !important;
+}
+
+.dropdown-menu a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.dropdown-menu a:hover::before {
+    width: 4px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .header-content {
@@ -659,6 +737,41 @@ nav a:focus,
     .theme-toggle {
         top: 1rem;
         right: 1rem;
+    }
+
+    .dropdown {
+        margin: 0.5rem 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        background-color: rgba(52, 152, 219, 0.1);
+        border-radius: 5px;
+        transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease, padding 0.3s ease;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    
+    .dropdown-menu a {
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    
+    .dropdown-menu a::before {
+        display: none;
     }
 }
 
