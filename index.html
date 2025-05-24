@@ -102,6 +102,7 @@
             <a href="#backend">Backend</a>
             <a href="#frontend">Frontend</a>
             <a href="#others">Others</a>
+            <a href="#cv">CV</a>
             <div class="dropdown">
               <a href="#" class="dropdown-toggle"
                 >Live Projects <i class="fas fa-caret-down"></i
@@ -648,6 +649,56 @@
             </div>
           </div>
         </div>
+      </div>    
+    </section>
+    <section id="cv" class="cv-section">
+      <div class="container">
+        <h2 class="section-title">CV - Özgeçmiş</h2>
+        <div class="cv-content">
+          <div class="cv-header">
+            <div class="cv-description">
+              <p>Download my curriculum vitae to learn more about my experience, education, and skills.</p>
+            </div>
+          </div>
+          
+          <div class="cv-cards">
+            <div class="cv-card" id="cv-tr">
+              <div class="cv-card-content">
+                <div class="cv-icon">
+                  <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>CV - Türkçe</h3>
+                <p>Deneyimlerim, eğitimim ve becerilerim hakkında detaylı bilgi için Türkçe CV'mi indirebilirsiniz.</p>
+                <div class="cv-actions">
+                  <a href="assets/sefa_agardan_tr.pdf" target="_blank" class="cv-btn view-btn">
+                    <i class="fas fa-eye"></i> Görüntüle
+                  </a>
+                  <a href="assets/sefa_agardan_tr.pdf" download="Sefa_Agardan_CV_TR.pdf" class="cv-btn download-btn">
+                    <i class="fas fa-download"></i> İndir
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="cv-card" id="cv-en">
+              <div class="cv-card-content">
+                <div class="cv-icon">
+                  <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>CV - English</h3>
+                <p>Download my English CV for detailed information about my experience, education, and skills.</p>
+                <div class="cv-actions">
+                  <a href="assets/sefa_agardan_en.pdf" target="_blank" class="cv-btn view-btn">
+                    <i class="fas fa-eye"></i> View
+                  </a>
+                  <a href="assets/sefa_agardan_en.pdf" download="Sefa_Agardan_CV_EN.pdf" class="cv-btn download-btn">
+                    <i class="fas fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -691,8 +742,7 @@
     <footer>
       <div class="container">
         <p>
-          &copy; 2025 G4stLy. No rights reserved, it's created using POE in like
-          10 mins.
+          &copy; 2025 G4stLy | Sefa Ağardan. All rights reserved.
         </p>
       </div>
     </footer>
@@ -755,9 +805,7 @@
           top: 0,
           behavior: "smooth",
         });
-      });
-
-      // Page loader
+      });      // Page loader
       const pageLoader = document.querySelector(".page-loader");
       window.addEventListener("load", () => {
         setTimeout(() => {

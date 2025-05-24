@@ -613,6 +613,198 @@ nav a:focus,
     outline-color: #64b5f6;
 }
 
+/* CV Section */
+.cv-section {
+    padding: 5rem 0;
+    background-color: var(--bg-secondary);
+    transition: background-color var(--transition-speed) ease;
+}
+
+.cv-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cv-header {
+    margin-bottom: 3rem;
+}
+
+.cv-description {
+    margin-bottom: 2rem;
+}
+
+.cv-description p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: color var(--transition-speed) ease;
+}
+
+.cv-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.cv-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cv-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(52, 152, 219, 0.05) 0%, transparent 70%);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.cv-card:hover::before {
+    transform: rotate(45deg) scale(1.2);
+}
+
+.cv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.cv-card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cv-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.cv-card:hover .cv-icon {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--hover-color);
+}
+
+.cv-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    transition: color var(--transition-speed) ease;
+}
+
+.cv-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    transition: color var(--transition-speed) ease;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cv-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.cv-btn:hover::before {
+    left: 0;
+}
+
+.view-btn {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.view-btn::before {
+    background-color: var(--accent-color);
+}
+
+.view-btn:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.download-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: 2px solid var(--accent-color);
+}
+
+.download-btn::before {
+    background-color: var(--hover-color);
+}
+
+.download-btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+}
+
+.cv-btn i {
+    transition: transform 0.3s ease;
+}
+
+.cv-btn:hover i {
+    transform: scale(1.1);
+}
+
+.download-btn:hover i {
+    animation: downloadPulse 0.6s ease;
+}
+
+@keyframes downloadPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -772,6 +964,40 @@ nav a:focus,
     
     .dropdown-menu a::before {
         display: none;
+    }    /* CV Section Mobile */
+    .cv-section {
+        padding: 3rem 0;
+    }
+
+    .cv-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cv-card {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .cv-icon {
+        font-size: 2.5rem;
+    }
+
+    .cv-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cv-btn {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+        padding: 0.9rem 1.5rem;
+    }
+
+    .cv-description p {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -790,5 +1016,28 @@ nav a:focus,
 
     .hero p {
         font-size: 1rem;
+    }    /* CV Section Small Mobile */
+    .cv-card {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .cv-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cv-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .cv-card p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.8rem;
     }
 }
