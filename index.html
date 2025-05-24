@@ -85,7 +85,7 @@
     <div class="page-loader">
       <div class="loader"></div>
     </div>
-    
+
     <!-- Theme Toggle Button -->
     <div class="theme-toggle">
       <button id="theme-toggle-btn">
@@ -103,13 +103,21 @@
             <a href="#frontend">Frontend</a>
             <a href="#others">Others</a>
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle">Live Projects <i class="fas fa-caret-down"></i></a>
+              <a href="#" class="dropdown-toggle"
+                >Live Projects <i class="fas fa-caret-down"></i
+              ></a>
               <div class="dropdown-menu">
                 <a href="https://g4stly.tr/pokedex" target="_blank">Pokedex</a>
                 <a href="https://links.g4stly.tr" target="_blank">Links Page</a>
-                <a href="https://instagram.g4stly.tr" target="_blank">Instagram Clone</a>
-                <a href="https://facebook.g4stly.tr" target="_blank">Facebook Clone</a>
-                <a href="https://g4stly.tr/g4Clothing" target="_blank">g4Clothing</a>
+                <a href="https://instagram.g4stly.tr" target="_blank"
+                  >Instagram Clone</a
+                >
+                <a href="https://facebook.g4stly.tr" target="_blank"
+                  >Facebook Clone</a
+                >
+                <a href="https://g4stly.tr/g4Clothing" target="_blank"
+                  >g4Clothing</a
+                >
               </div>
             </div>
             <a href="#contact">Contact</a>
@@ -138,7 +146,27 @@
         <div class="project-grid">
           <div class="project-card">
             <span class="category-label">Backend</span>
-            <h3>E-Commerce Full Stack</h3>
+            <h3>Flashcard App (Full-Stack)</h3>
+            <p>
+              C# .NET + JS (+ MySQL + AWS). MVC <br>
+              Full-stack web app that people create flashcard sets
+              and share these (publicly or friends-only). <br>
+              Has a secure auth system, using JWT, salts, pepper, and
+              Argon2. Has friends system, and an admin dashboard.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/flashcardApp"
+                target="_blank"
+                class="source-code"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>E-Commerce App (Full-Stack)</h3>
             <p>
               Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
               tests, validations, auth, security, responsive design,
@@ -156,7 +184,23 @@
           </div>
           <div class="project-card">
             <span class="category-label">Backend</span>
-            <h3>Todo App Full Stack</h3>
+            <h3>Library Management System (Full-Stack)</h3>
+            <p>
+              C# .NET, MVC, SSR <br>JWT, Argon2, salting, peppering <br> Sqlite <br> Books, Users, Loans
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/library_management_system"
+                target="_blank"
+                class="source-code"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Todo App (Full-Stack)</h3>
             <p>
               Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
               tests, validations, auth, security, responsive design,
@@ -198,7 +242,7 @@
           </div>
           <div class="project-card">
             <span class="category-label">Backend</span>
-            <h3>Jobster (full stack)</h3>
+            <h3>Jobster (Full-Stack)</h3>
             <p>
               ExpressJS + ReactJS. contains login,register, and CRUD
               functionality.
@@ -656,63 +700,69 @@
     <!-- Dark/Light Mode Toggle Script -->
     <script>
       // Theme toggle functionality
-      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const themeToggleBtn = document.getElementById("theme-toggle-btn");
       const body = document.body;
 
       // Check for saved theme preference or use preferred color scheme
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDarkScheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      );
 
-      if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-          body.classList.add('dark-theme');
+      if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
+        body.classList.add("dark-theme");
       }
 
-      themeToggleBtn.addEventListener('click', () => {
-          body.classList.toggle('dark-theme');
-          
-          // Save theme preference
-          const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
-          localStorage.setItem('theme', currentTheme);
+      themeToggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-theme");
+
+        // Save theme preference
+        const currentTheme = body.classList.contains("dark-theme")
+          ? "dark"
+          : "light";
+        localStorage.setItem("theme", currentTheme);
       });
 
       // Set current year in footer
-      document.querySelector('footer p').innerHTML = document.querySelector('footer p').innerHTML.replace('2025', new Date().getFullYear());
-      
+      document.querySelector("footer p").innerHTML = document
+        .querySelector("footer p")
+        .innerHTML.replace("2025", new Date().getFullYear());
+
       // Add animation to project cards
-      document.addEventListener('DOMContentLoaded', () => {
-          const cards = document.querySelectorAll('.project-card');
-          cards.forEach((card, index) => {
-              setTimeout(() => {
-                  card.style.opacity = '1';
-                  card.style.transform = 'translateY(0)';
-              }, 100 * index);
-          });
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".project-card");
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+          }, 100 * index);
+        });
       });
 
       // Scroll to top button functionality
-      const scrollToTopBtn = document.querySelector('.scroll-to-top');
-      
-      window.addEventListener('scroll', () => {
-          if (window.pageYOffset > 300) {
-              scrollToTopBtn.classList.add('visible');
-          } else {
-              scrollToTopBtn.classList.remove('visible');
-          }
+      const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add("visible");
+        } else {
+          scrollToTopBtn.classList.remove("visible");
+        }
       });
-      
-      scrollToTopBtn.addEventListener('click', () => {
-          window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-          });
+
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
 
       // Page loader
-      const pageLoader = document.querySelector('.page-loader');
-      window.addEventListener('load', () => {
-          setTimeout(() => {
-              pageLoader.classList.add('hidden');
-          }, 500);
+      const pageLoader = document.querySelector(".page-loader");
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          pageLoader.classList.add("hidden");
+        }, 500);
       });
     </script>
   </body>
