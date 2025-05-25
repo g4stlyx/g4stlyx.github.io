@@ -149,15 +149,34 @@
             <span class="category-label">Backend</span>
             <h3>Flashcard App (Full-Stack)</h3>
             <p>
-              C# .NET + JS (+ MySQL + AWS). MVC <br>
-              Full-stack web app that people create flashcard sets
-              and share these (publicly or friends-only). <br>
-              Has a secure auth system, using JWT, salts, pepper, and
-              Argon2. Has friends system, and an admin dashboard.
+              C# .NET + JS (+ MySQL + AWS). MVC <br />
+              Full-stack web app that people create flashcard sets and share
+              these (publicly or friends-only). <br />
+              Has a secure auth system, using JWT, salts, pepper, and Argon2.
+              Has friends system, and an admin dashboard.
             </p>
             <div class="project-links" style="margin-top: 1rem">
               <a
                 href="https://github.com/g4stlyx/flashcardApp"
+                target="_blank"
+                class="source-code"
+              >
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="category-label">Backend</span>
+            <h3>Fake AI Checker (Full-Stack)</h3>
+            <p>
+              C# .NET + JS (+ MySQL + AWS). MVC <br />
+              A secure ASP.NET Core MVC application designed to simulate AI
+              content detection while checking for API keys, tokens, secrets,
+              etc. in uploaded files and archives.
+            </p>
+            <div class="project-links" style="margin-top: 1rem">
+              <a
+                href="https://github.com/g4stlyx/FakeAiChecker"
                 target="_blank"
                 class="source-code"
               >
@@ -187,7 +206,9 @@
             <span class="category-label">Backend</span>
             <h3>Library Management System (Full-Stack)</h3>
             <p>
-              C# .NET, MVC, SSR <br>JWT, Argon2, salting, peppering <br> Sqlite <br> Books, Users, Loans
+              C# .NET, MVC, SSR <br />JWT, Argon2, salting, peppering <br />
+              Sqlite <br />
+              Books, Users, Loans
             </p>
             <div class="project-links" style="margin-top: 1rem">
               <a
@@ -649,7 +670,7 @@
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </section>
     <section id="cv" class="cv-section">
       <div class="container">
@@ -657,10 +678,13 @@
         <div class="cv-content">
           <div class="cv-header">
             <div class="cv-description">
-              <p>Download my curriculum vitae to learn more about my experience, education, and skills.</p>
+              <p>
+                Download my curriculum vitae to learn more about my experience,
+                education, and skills.
+              </p>
             </div>
           </div>
-          
+
           <div class="cv-cards">
             <div class="cv-card" id="cv-tr">
               <div class="cv-card-content">
@@ -668,30 +692,52 @@
                   <i class="fas fa-file-pdf"></i>
                 </div>
                 <h3>CV - Türkçe</h3>
-                <p>Deneyimlerim, eğitimim ve becerilerim hakkında detaylı bilgi için Türkçe CV'mi indirebilirsiniz.</p>
+                <p>
+                  Deneyimlerim, eğitimim ve becerilerim hakkında detaylı bilgi
+                  için Türkçe CV'mi indirebilirsiniz.
+                </p>
                 <div class="cv-actions">
-                  <a href="assets/sefa_agardan_tr.pdf" target="_blank" class="cv-btn view-btn">
+                  <a
+                    href="assets/sefa_agardan_tr.pdf"
+                    target="_blank"
+                    class="cv-btn view-btn"
+                  >
                     <i class="fas fa-eye"></i> Görüntüle
                   </a>
-                  <a href="assets/sefa_agardan_tr.pdf" download="Sefa_Agardan_CV_TR.pdf" class="cv-btn download-btn">
+                  <a
+                    href="assets/sefa_agardan_tr.pdf"
+                    download="Sefa_Agardan_CV_TR.pdf"
+                    class="cv-btn download-btn"
+                  >
                     <i class="fas fa-download"></i> İndir
                   </a>
                 </div>
               </div>
             </div>
-            
+
             <div class="cv-card" id="cv-en">
               <div class="cv-card-content">
                 <div class="cv-icon">
                   <i class="fas fa-file-pdf"></i>
                 </div>
                 <h3>CV - English</h3>
-                <p>Download my English CV for detailed information about my experience, education, and skills.</p>
+                <p>
+                  Download my English CV for detailed information about my
+                  experience, education, and skills.
+                </p>
                 <div class="cv-actions">
-                  <a href="assets/sefa_agardan_en.pdf" target="_blank" class="cv-btn view-btn">
+                  <a
+                    href="assets/sefa_agardan_en.pdf"
+                    target="_blank"
+                    class="cv-btn view-btn"
+                  >
                     <i class="fas fa-eye"></i> View
                   </a>
-                  <a href="assets/sefa_agardan_en.pdf" download="Sefa_Agardan_CV_EN.pdf" class="cv-btn download-btn">
+                  <a
+                    href="assets/sefa_agardan_en.pdf"
+                    download="Sefa_Agardan_CV_EN.pdf"
+                    class="cv-btn download-btn"
+                  >
                     <i class="fas fa-download"></i> Download
                   </a>
                 </div>
@@ -741,9 +787,7 @@
 
     <footer>
       <div class="container">
-        <p>
-          &copy; 2025 G4stLy | Sefa Ağardan. All rights reserved.
-        </p>
+        <p>&copy; 2025 G4stLy | Sefa Ağardan. All rights reserved.</p>
       </div>
     </footer>
 
@@ -805,7 +849,7 @@
           top: 0,
           behavior: "smooth",
         });
-      });      // Page loader
+      }); // Page loader
       const pageLoader = document.querySelector(".page-loader");
       window.addEventListener("load", () => {
         setTimeout(() => {
