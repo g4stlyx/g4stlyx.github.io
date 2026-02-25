@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-theme">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,855 +7,612 @@
     <link rel="shortcut icon" type="image/png" href="assets/92.png" />
     <meta
       name="description"
-      content="Portfolio of Sefa Ağardan, an Istanbul Arel University Computer Engineering student specializing in Backend (Java Spring Boot, ExpressJS) and Frontend (ReactJS, Flutter) development. Explore projects and contact info."
+      content="Portfolio of Sefa Ağardan — Backend Engineer specializing in Spring Boot, AI/CV pipelines, and scalable system design."
     />
-    <title>Sefa AĞARDAN | G4stLy</title>
+    <title>Sefa Ağardan | g4stly</title>
 
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://g4stly.tr/" />
 
-    <!-- !Open Graph Meta Tags, more seo stuff -->
-    <meta property="og:title" content="Sefa AĞARDAN | G4stLy" />
-    <meta
-      property="og:description"
-      content="Portfolio of Sefa Ağardan, Computer Engineering student specializing in Java Spring Boot, ExpressJS, ReactJS, Flutter. Explore projects and contact info."
-    />
+    <meta property="og:title" content="Sefa Ağardan | g4stly" />
+    <meta property="og:description" content="Backend Engineer — Spring Boot, AI/CV, scalable systems." />
     <meta property="og:image" content="https://g4stly.tr/assets/92.png" />
     <meta property="og:url" content="https://g4stly.tr/" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="tr_TR" />
 
-    <!-- Font Awesome for social icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Google Fonts - Poppins -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+    <!-- Google Fonts - Inter + JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 
-    <!-- !SEO stuff -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sefa Ağardan",
-        "url": "https://g4stly.tr", // Replace with your actual URL
-        "jobTitle": "Computer Engineering Student",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Istanbul Arel University"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Istanbul Arel University"
-        },
-        "knowsAbout": [
-          "Java Spring Boot",
-          "Java",
-          "Javascript",
-          "ExpressJS",
-          "ReactJS",
-          "Flutter",
-          "Backend Development",
-          "Frontend Development",
-          "Full-Stack Development",
-          "Software Engineering",
-          "C",
-          "C++",
-          "Python",
-          "Typescript",
-          "Bootstrap",
-          "Image Processing"
-        ],
+        "url": "https://g4stly.tr",
+        "jobTitle": "Backend Engineer",
         "sameAs": [
           "https://www.linkedin.com/in/sef4/",
           "https://github.com/g4stlyx",
-          "https://www.instagram.com/sefa.js",
-          "https://tryhackme.com/r/p/g4stly"
+          "https://tryhackme.com/r/p/g4stly",
+          "https://www.instagram.com/sefa.js"
         ]
       }
     </script>
   </head>
   <body>
+
     <!-- Page Loader -->
     <div class="page-loader">
       <div class="loader"></div>
     </div>
 
-    <!-- Theme Toggle Button -->
-    <div class="theme-toggle">
-      <button id="theme-toggle-btn">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-      </button>
-    </div>
-
+    <!-- Header / Nav -->
     <header>
       <div class="container">
         <div class="header-content">
-          <a class="name" href="https://g4stly.tr">G4stLy</a>
-          <nav>
+          <a class="name" href="https://g4stly.tr">g4stly</a>
+          <nav id="main-nav">
+            <a href="#featured">Featured</a>
             <a href="#backend">Backend</a>
             <a href="#frontend">Frontend</a>
             <a href="#others">Others</a>
-            <!-- <a href="#cv">CV</a> -->
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle"
-                >Live Projects <i class="fas fa-caret-down"></i
-              ></a>
-              <div class="dropdown-menu">
+              <a href="#" class="dropdown-toggle" id="live-toggle">Live <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu" id="live-menu">
+                <a href="https://drive.further-up.net" target="_blank">FurtherUp Drive</a>
+                <a href="https://atlidepohizmetleri.com" target="_blank">Atlı Depo Hizmetleri</a>
                 <a href="https://g4stly.tr/pokedex" target="_blank">Pokedex</a>
                 <a href="https://links.g4stly.tr" target="_blank">Links Page</a>
-                <a href="https://instagram.g4stly.tr" target="_blank"
-                  >Instagram Clone</a
-                >
-                <a href="https://facebook.g4stly.tr" target="_blank"
-                  >Facebook Clone</a
-                >
-                <a href="https://g4stly.tr/g4Clothing" target="_blank"
-                  >g4Clothing</a
-                >
+                <a href="https://instagram.g4stly.tr" target="_blank">Instagram Clone</a>
+                <a href="https://facebook.g4stly.tr" target="_blank">Facebook Clone</a>
               </div>
             </div>
             <a href="#contact">Contact</a>
           </nav>
+          <div class="header-right">
+            <div class="theme-toggle">
+              <button id="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Sefa Ağardan</h1>
-        <h2>Senior Computer Engineering Student in Istanbul Arel University</h2>
-        <br />
-        <p>
-          Although focused on backend (Java Spring Boot, C# .NET, ExpressJS), I
-          develop frontend applications too using ReactJS, ElectronJS, and
-          Flutter. I am also interested in image processing and AI.
-        </p>
-        <p>You can see more projects on my github page.</p>
+        <div class="hero-inner">
+          <h1>Sefa Ağardan</h1>
+          <h2>Backend Engineer</h2>
+          <p class="hero-bio">
+            Building scalable backend systems and AI-powered applications.
+            Experienced in multi-tenant architectures, secure REST APIs, and production-grade computer vision pipelines.
+          </p>
+          <div class="hero-contacts">
+            <a href="https://www.g4stly.tr" target="_blank" class="contact-link">
+              <i class="fas fa-globe"></i> g4stly.tr
+            </a>
+            <a href="mailto:agardan.sefa@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i> agardan.sefa@gmail.com
+            </a>
+            <a href="https://github.com/g4stlyx" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i> g4stlyx
+            </a>
+            <a href="https://www.linkedin.com/in/sef4" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i> sef4
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ──── FEATURED PROJECTS ──── -->
+    <section id="featured" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-list">
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge production">Production</span>
+              <div class="project-row-links">
+                <a href="https://drive.further-up.net" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">FurtherUp — Enterprise Coaching Platform</h3>
+            <p class="project-row-desc">Built and deployed an enterprise coaching platform from scratch. Multi-tenant architecture with 60+ REST endpoints, JWT-based RBAC, assessment engines, SMART goal tracking, admin dashboard, and event-driven email notifications. Managed full lifecycle: infrastructure, DNS, security hardening, backups, and cloud storage.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</span>
+              <span class="tech-tag"><i class="fas fa-lock"></i> JWT</span>
+              <span class="tech-tag"><i class="fas fa-cloud"></i> Cloudflare R2</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge production">Production</span>
+              <div class="project-row-links"></div>
+            </div>
+            <h3 class="project-row-title">Smart Hospital System — Kanuni Sultan Süleyman Hospital</h3>
+            <p class="project-row-desc">Integrated healthcare platform including patient and staff mobile apps, admin desktop panel, and Spring Boot backend. Designed for low-infrastructure environments with real-time navigation and emergency coordination capabilities.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-flutter-plain colored"></i> Flutter</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+              <span class="tech-tag"><i class="devicon-electron-original colored"></i> Electron</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge production">Production</span>
+              <div class="project-row-links">
+                <a href="https://atlidepohizmetleri.com" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Atlı Logistics — Workforce Management System</h3>
+            <p class="project-row-desc">Workforce management platform for logistics operations. Hierarchical admin roles, secure task assignment, payment tracking, and worker verification. Scalable REST backend with React dashboard.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge ai">AI / CV</span>
+              <div class="project-row-links"></div>
+            </div>
+            <h3 class="project-row-title">Military Aircraft Classification System — Deep Learning Pipeline</h3>
+            <p class="project-row-desc">Deep learning pipeline classifying 89 aircraft types across 38,826 images using EfficientNet-B4. Achieved 92.86% Top-1 accuracy with weighted loss and aggressive augmentation to address class imbalance. Full evaluation pipeline and production-ready inference.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="devicon-pytorch-plain colored"></i> PyTorch</span>
+              <span class="tech-tag"><i class="devicon-scikitlearn-plain colored"></i> scikit-learn</span>
+              <span class="tech-tag"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+              <span class="tech-tag"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+              <span class="tech-tag"><i class="fas fa-microchip"></i> EfficientNet-B4</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <div class="project-row-badges">
+                <span class="category-badge ai">AI</span>
+                <span class="category-badge backend">Backend</span>
+              </div>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/chatbot" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Full-Stack AI Chatbot — Spring Boot + Llama3</h3>
+            <p class="project-row-desc">Production-ready chatbot platform built with Spring Boot and React, powered by Llama3 via Ollama. Features JWT auth with TOTP 2FA, Redis caching, multi-level admin panel, session and project management, public chat sharing, 8-layer prompt injection protection, and automated daily database backups. Fully Dockerized.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-redis-plain colored"></i> Redis</span>
+              <span class="tech-tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+              <span class="tech-tag"><i class="fas fa-robot"></i> Llama3 / Ollama</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge ai">AI / CV</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/horizon_line_segmentation" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Maritime Horizon Line Segmentation — Multi-Approach Research</h3>
+            <p class="project-row-desc">Comprehensive research into maritime horizon detection spanning traditional CV (K-means, contour detection) through deep learning. Best results with a 3-class U-Net (sky/water/object) integrated with RT-DETR for real-time object-aware segmentation, pixel/physical distance estimation, and support for video, webcam, and static image inputs.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="devicon-pytorch-plain colored"></i> PyTorch</span>
+              <span class="tech-tag"><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+              <span class="tech-tag"><i class="devicon-numpy-plain colored"></i> NumPy</span>
+              <span class="tech-tag"><i class="fas fa-network-wired"></i> U-Net</span>
+              <span class="tech-tag"><i class="fas fa-eye"></i> RT-DETR</span>
+              <span class="tech-tag"><i class="fas fa-expand-arrows-alt"></i> YOLOv8-seg</span>
+            </div>
+          </div>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge security">Security</span>
+              <div class="project-row-links"></div>
+            </div>
+            <h3 class="project-row-title">Arelim University — Webpage Vulnerability Report</h3>
+            <p class="project-row-desc">Comprehensive security analysis of arelim.arel.edu.tr. Identified unauthorized access, data leaks via REST APIs, XSS vulnerabilities, and SQL injection. Detailed exploitation scenarios and OWASP-based mitigations. Advised by Asst. Prof. Dr. Tugberk KOCATEKIN.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="fas fa-shield-alt"></i> Broken Access Control</span>
+              <span class="tech-tag"><i class="fas fa-database"></i> SQL Injection</span>
+              <span class="tech-tag"><i class="fas fa-code"></i> XSS</span>
+              <span class="tech-tag"><i class="fas fa-bug"></i> OWASP Top 10</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ──── BACKEND PROJECTS ──── -->
     <section id="backend" class="projects">
       <div class="container">
         <h2 class="section-title">Backend Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Flashcard App (Full-Stack)</h3>
-            <p>
-              C# .NET + JS (+ MySQL + AWS). MVC <br />
-              Full-stack web app that people create flashcard sets and share
-              these (publicly or friends-only). <br />
-              Has a secure auth system, using JWT, salts, pepper, and Argon2.
-              Has friends system, and an admin dashboard.
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
-              <a
-                href="https://github.com/g4stlyx/flashcardApp"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+        <div class="project-list">
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/flashcardApp" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Flashcard App (Full-Stack)</h3>
+            <p class="project-row-desc">Full-stack web app where users create flashcard sets and share them publicly or with friends. Secure auth: JWT, salts, pepper, Argon2. Friends system and admin dashboard.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+              <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+              <span class="tech-tag"><i class="fas fa-lock"></i> JWT + Argon2</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Fake AI Checker (Full-Stack)</h3>
-            <p>
-              C# .NET + JS (+ MySQL + AWS). MVC <br />
-              A secure ASP.NET Core MVC application designed to simulate AI
-              content detection while checking for API keys, tokens, secrets,
-              etc. in uploaded files and archives.
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
-              <a
-                href="https://github.com/g4stlyx/FakeAiChecker"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/FakeAiChecker" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Fake AI Checker (Full-Stack)</h3>
+            <p class="project-row-desc">Secure ASP.NET Core MVC app simulating AI content detection while scanning uploaded files and archives for leaked API keys, tokens, and secrets.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+              <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>E-Commerce App (Full-Stack)</h3>
-            <p>
-              Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
-              tests, validations, auth, security, responsive design,
-              documentation with Swagger API...
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
-              <a
-                href="https://github.com/g4stlyx/eCommerceFullStack"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/eCommerceFullStack" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">E-Commerce App (Full-Stack)</h3>
+            <p class="project-row-desc">Full-stack e-commerce with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Library Management System (Full-Stack)</h3>
-            <p>
-              C# .NET, MVC, SSR <br />JWT, Argon2, salting, peppering <br />
-              Sqlite <br />
-              Books, Users, Loans
-            </p>
-            <div class="project-links" style="margin-top: 1rem">
-              <a
-                href="https://github.com/g4stlyx/library_management_system"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/library_management_system" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Library Management System (Full-Stack)</h3>
+            <p class="project-row-desc">Server-side rendered library system with JWT auth, Argon2 hashing (salting + peppering). Books, users, and loan management.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
+              <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC SSR</span>
+              <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
+              <span class="tech-tag"><i class="fas fa-lock"></i> JWT + Argon2</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Todo App (Full-Stack)</h3>
-            <p>
-              Java Spring Boot + ReactJS + Typescript (+ MySQL + AWS). unit
-              tests, validations, auth, security, responsive design,
-              documentation with Swagger API...
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/todoFullStack"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/todoFullStack" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Todo App (Full-Stack)</h3>
+            <p class="project-row-desc">Full-stack todo app with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>E-Commerce API</h3>
-            <p>
-              coded with ExpressJS and NodeJS. CRUD for different classes, auth,
-              security, JWT tokens...
-            </p>
-            <div class="project-links">
-              <a
-                href="https://ecommerceapi-zwqi.onrender.com/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Docs
-              </a>
-              <a
-                href="https://github.com/g4stlyx/eCommerceAPI/"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge backend">Backend</span>
+              <div class="project-row-links">
+                <a href="https://ecommerceapi-zwqi.onrender.com/" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Docs</a>
+                <a href="https://github.com/g4stlyx/eCommerceAPI/" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">E-Commerce REST API</h3>
+            <p class="project-row-desc">RESTful e-commerce API with CRUD operations, role-based auth, JWT tokens, and security middleware.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+              <span class="tech-tag"><i class="devicon-express-original"></i> Express</span>
+              <span class="tech-tag"><i class="fas fa-lock"></i> JWT</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Jobster (Full-Stack)</h3>
-            <p>
-              ExpressJS + ReactJS. contains login,register, and CRUD
-              functionality.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://jobster-api-1yfd.onrender.com/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Docs
-              </a>
-              <a
-                href="https://github.com/g4stlyx/jobsterAPI"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Jobs API (dont remember doing it)</h3>
-            <p>
-              created by/with expressJS. contains register/login functionality,
-              authentication check, jobs and users etc.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://jobs-api-qomp.onrender.com/api-docs/#/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Docs
-              </a>
-              <a
-                href="https://github.com/g4stlyx/jobsAPI"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Backend</span>
-            <h3>Store API (dont remember doing it)</h3>
-            <p>
-              an api that you can operate searching, filtering, sorting, and
-              paginating data fetched from database. created with expressJS.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/storeAPI"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ──── FRONTEND PROJECTS ──── -->
     <section id="frontend" class="projects">
       <div class="container">
         <h2 class="section-title">Frontend Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>Pokedex + Pokemon Battles</h3>
-            <p>
-              Have 3 pages(pokemons, details, battles). Used pokeapi.co, html,
-              css, bootstrap, and vanilla JS.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://g4stly.tr/pokedex/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a
-                href="https://github.com/g4stlyx/pokedex"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+        <div class="project-list">
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge frontend">Frontend</span>
+              <div class="project-row-links">
+                <a href="https://g4stly.tr/pokedex/" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="https://github.com/g4stlyx/pokedex" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Pokedex + Pokemon Battles</h3>
+            <p class="project-row-desc">3-page app (Pokémons, Details, Battles) using PokéAPI. Responsive design with Bootstrap and vanilla JS.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+              <span class="tech-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+              <span class="tech-tag"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>Instagram Clone</h3>
-            <p>
-              You can see 5 main pages of the homepage of instagram (home,
-              explore, reels, messages, profile). responsive, used ReactJS.
-            </p>
-            <div class="project-links">
-              <a
-                href="http://instagram.g4stly.tr"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a
-                href="https://github.com/g4stlyx/instagramClone"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge frontend">Frontend</span>
+              <div class="project-row-links">
+                <a href="http://instagram.g4stly.tr" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="https://github.com/g4stlyx/instagramClone" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Instagram Clone</h3>
+            <p class="project-row-desc">5 main pages of Instagram: home, explore, reels, messages, profile. Fully responsive, built with ReactJS.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>Facebook Clone</h3>
-            <p>
-              You can see 5 main pages of the homepage of facebook (home,
-              friends, video, marketplace, gaming). responsive, used ReactJS.
-            </p>
-            <div class="project-links">
-              <a
-                href="http://facebook.g4stly.tr"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a
-                href="https://github.com/g4stlyx/facebookClone"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge frontend">Frontend</span>
+              <div class="project-row-links">
+                <a href="http://facebook.g4stly.tr" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="https://github.com/g4stlyx/facebookClone" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Facebook Clone</h3>
+            <p class="project-row-desc">5 main sections of Facebook: home, friends, video, marketplace, gaming. Fully responsive, built with ReactJS.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
+              <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>AI Super App, Flutter -mobile-</h3>
-            <p>
-              Contains several ai-powered features like: chatbots (both using
-              gemini and openai), face analysis(emotion ,age, gender
-              recognition), document translation etc.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/ai_super_app"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge frontend">Mobile</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/ai_super_app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">AI Super App (Flutter Mobile)</h3>
+            <p class="project-row-desc">AI-powered Flutter app with chatbots (Gemini + OpenAI), face analysis (emotion, age, gender recognition), and document translation tools.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-flutter-plain colored"></i> Flutter</span>
+              <span class="tech-tag"><i class="devicon-dart-plain colored"></i> Dart</span>
+              <span class="tech-tag"><i class="fas fa-robot"></i> OpenAI</span>
+              <span class="tech-tag"><i class="fas fa-robot"></i> Gemini</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>templateWebApp</h3>
-            <p>
-              i created it to use as a template for my future projects.
-              responsive, used ReactJS, Typescript.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/templateWebApp"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge frontend">Frontend</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/collaborative-todo-app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Collaborative Todo App</h3>
+            <p class="project-row-desc">Register, login, add friends, share todos. Could be extended into a Notion-like page system with TypeScript and Firebase.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+              <span class="tech-tag"><i class="devicon-firebase-plain colored"></i> Firebase</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>Collaborative Todo App</h3>
-            <p>
-              Register, login, adding friends, sharing todos. Could be
-              transformed into something like Notion (by converting todos to
-              pages). Typescript & Firebase.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/collaborative-todo-app"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>g4Cafe cafe/menu</h3>
-            <p>cafe/menu website. react</p>
-            <div class="project-links">
-              <a
-                href="https://g4stly.tr/g4Cafe/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a
-                href="https://github.com/g4stlyx/g4Cafe"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>g4Clothing e-commerce</h3>
-            <p>e-commerce website focused on clothing.</p>
-            <div class="project-links">
-              <a
-                href="https://g4stly.tr/g4Clothing/"
-                target="_blank"
-                class="live-demo"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a
-                href="https://github.com/g4stlyx/g4Clothing"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>Photo Search App (i dont remember doing it)</h3>
-            <p>Photo Search App created with React and Unsplash API.</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/photoSearchReact"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>SnapShot (i dont remember doing it)</h3>
-            <p>search images using Flickr API. ReactJS is used.</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/snapShot"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Frontend</span>
-            <h3>g4Store (i dont remember doing it)</h3>
-            <p>An e-commerce website template written in ReactJS and Redux.</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/g4StoreReact"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ──── OTHER PROJECTS ──── -->
     <section id="others" class="projects">
       <div class="container">
         <h2 class="section-title">Other Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>Lecture Content Fetcher, py script</h3>
-            <p>
-              It goes to arel uzem website, logs in, checks courses for
-              downloadable lecture contents. if sees any new content, downloads
-              them to the related folder.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/lecture_content_fetcher"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+        <div class="project-list">
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge other">Script</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/lecture_content_fetcher" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Lecture Content Fetcher</h3>
+            <p class="project-row-desc">Logs into Arel UZEM, scans courses for downloadable lecture content, and auto-downloads new files into the appropriate local folders.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="fas fa-spider"></i> BeautifulSoup</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>Vulnerability Scanner, py script</h3>
-            <p>
-              Options: whois and IP information lookup, path scanning, reverse
-              lookup for websites on the same server, OWASP top 10 scanning (sql
-              & xss injection etc.) <br />
-              Scans for these and creates a markdown (.MD) report.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/vulnerability_scanner/"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge security">Security</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/vulnerability_scanner/" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Vulnerability Scanner</h3>
+            <p class="project-row-desc">Whois &amp; IP lookup, path scanning, reverse lookup, OWASP Top 10 scanning (SQL injection, XSS, etc.). Generates a Markdown report with all findings.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="fas fa-shield-alt"></i> OWASP</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>Arcade Games App</h3>
-            <p>
-              Super app containing several arcade games re-coded in Python using
-              Pygame. Contains: Space Invaders, Snake, Pacman, Tetris, Flappy
-              Bird.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/arcade_games_app"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge other">Game</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/arcade_games_app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">Arcade Games Super App</h3>
+            <p class="project-row-desc">Super app with classic arcade games re-coded in Python: Space Invaders, Snake, Pacman, Tetris, Flappy Bird.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="fas fa-gamepad"></i> Pygame</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>uniManagement Java</h3>
-            <p>
-              object oriented programmed university management system; includes
-              students, instructors and an admin
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/uniManagement"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
+
+          <div class="project-row">
+            <div class="project-row-top">
+              <span class="category-badge other">Game</span>
+              <div class="project-row-links">
+                <a href="https://github.com/g4stlyx/turkeyInvaders" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+            <h3 class="project-row-title">turkeyInvaders</h3>
+            <p class="project-row-desc">An "extremely different" version of the classic Space Invaders arcade game.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-tag"><i class="fas fa-gamepad"></i> Pygame</span>
             </div>
           </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>ticTacToeJava (dont remember doing it)</h3>
-            <p>tic-tac-toe coded with Java,Swing to practise it</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/ticTacToeJava"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>Space-Invaders</h3>
-            <p>a bit different version of a classical arcade game</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/Space-Invaders"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <span class="category-label">Other</span>
-            <h3>turkeyInvaders</h3>
-            <p>
-              "extremely" different version of a classical arcade game Space
-              Invaders
-            </p>
-            <div class="project-links">
-              <a
-                href="https://github.com/g4stlyx/turkeyInvaders"
-                target="_blank"
-                class="source-code"
-              >
-                <i class="fab fa-github"></i> Source Code
-              </a>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
-    <!-- <section id="cv" class="cv-section">
+
+    <!-- ──── CONTACT ──── -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <h2 class="section-title">CV - Özgeçmiş</h2>
-        <div class="cv-content">
-          <div class="cv-header">
-            <div class="cv-description">
-              <p>
-                Download my curriculum vitae to learn more about my experience,
-                education, and skills.
-              </p>
-            </div>
-          </div>
-
-          <div class="cv-cards">
-            <div class="cv-card" id="cv-tr">
-              <div class="cv-card-content">
-                <div class="cv-icon">
-                  <i class="fas fa-file-pdf"></i>
-                </div>
-                <h3>CV - Türkçe</h3>
-                <p>
-                  Deneyimlerim, eğitimim ve becerilerim hakkında detaylı bilgi
-                  için Türkçe CV'mi indirebilirsiniz.
-                </p>
-                <div class="cv-actions">
-                  <a
-                    href="assets/sefa_agardan_tr.pdf"
-                    target="_blank"
-                    class="cv-btn view-btn"
-                  >
-                    <i class="fas fa-eye"></i> Görüntüle
-                  </a>
-                  <a
-                    href="assets/sefa_agardan_tr.pdf"
-                    download="Sefa_Agardan_CV_TR.pdf"
-                    class="cv-btn download-btn"
-                  >
-                    <i class="fas fa-download"></i> İndir
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="cv-card" id="cv-en">
-              <div class="cv-card-content">
-                <div class="cv-icon">
-                  <i class="fas fa-file-pdf"></i>
-                </div>
-                <h3>CV - English</h3>
-                <p>
-                  Download my English CV for detailed information about my
-                  experience, education, and skills.
-                </p>
-                <div class="cv-actions">
-                  <a
-                    href="assets/sefa_agardan_en.pdf"
-                    target="_blank"
-                    class="cv-btn view-btn"
-                  >
-                    <i class="fas fa-eye"></i> View
-                  </a>
-                  <a
-                    href="assets/sefa_agardan_en.pdf"
-                    download="Sefa_Agardan_CV_EN.pdf"
-                    class="cv-btn download-btn"
-                  >
-                    <i class="fas fa-download"></i> Download
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title light-text">Contact Information</h2>
+        <h2 class="section-title">Get In Touch</h2>
         <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/sef4/"
-            class="linkedin"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/g4stlyx" class="github" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/sefa.js"
-            class="instagram"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://tryhackme.com/r/p/g4stly"
-            class="tryhackme"
-            target="_blank"
-          >
-            <i class="fas fa-user-secret"></i>
-          </a>
+          <a href="https://www.linkedin.com/in/sef4/" class="social-icon linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/g4stlyx" class="social-icon github" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:agardan.sefa@gmail.com" class="social-icon email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.instagram.com/sefa.js" class="social-icon instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tryhackme.com/r/p/g4stly" class="social-icon tryhackme" target="_blank" aria-label="TryHackMe"><i class="fas fa-user-secret"></i></a>
         </div>
       </div>
     </section>
 
-    <!-- Scroll to Top Button -->
-    <div class="scroll-to-top">
-      <i class="fas fa-arrow-up"></i>
-    </div>
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
 
     <footer>
       <div class="container">
-        <p>&copy; 2025 G4stLy | Sefa Ağardan. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Sefa Ağardan. All rights reserved.</p>
       </div>
     </footer>
 
-    <!-- Dark/Light Mode Toggle Script -->
     <script>
-      // Theme toggle functionality
-      const themeToggleBtn = document.getElementById("theme-toggle-btn");
-      const body = document.body;
+      document.getElementById('year').textContent = new Date().getFullYear();
 
-      // Check for saved theme preference or use preferred color scheme
-      const savedTheme = localStorage.getItem("theme");
-      const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      );
+      // Theme toggle — default dark
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const html = document.documentElement;
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') html.classList.remove('dark-theme');
+      else html.classList.add('dark-theme');
 
-      if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
-        body.classList.add("dark-theme");
-      }
-
-      themeToggleBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-theme");
-
-        // Save theme preference
-        const currentTheme = body.classList.contains("dark-theme")
-          ? "dark"
-          : "light";
-        localStorage.setItem("theme", currentTheme);
+      themeToggleBtn.addEventListener('click', () => {
+        html.classList.toggle('dark-theme');
+        localStorage.setItem('theme', html.classList.contains('dark-theme') ? 'dark' : 'light');
       });
 
-      // Set current year in footer
-      document.querySelector("footer p").innerHTML = document
-        .querySelector("footer p")
-        .innerHTML.replace("2025", new Date().getFullYear());
+      // Scroll-to-top
+      const scrollBtn = document.querySelector('.scroll-to-top');
+      window.addEventListener('scroll', () => scrollBtn.classList.toggle('visible', window.pageYOffset > 300));
+      scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-      // Add animation to project cards
-      document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll(".project-card");
-        cards.forEach((card, index) => {
-          setTimeout(() => {
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-          }, 100 * index);
+      // Animate rows on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.06 });
+      document.querySelectorAll('.project-row').forEach(row => observer.observe(row));
+
+      // Hamburger nav toggle
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNav   = document.getElementById('main-nav');
+      navToggle.addEventListener('click', () => {
+        const open = mainNav.classList.toggle('open');
+        navToggle.querySelector('i').className = open ? 'fas fa-times' : 'fas fa-bars';
+      });
+      // Close nav when a non-dropdown link is clicked
+      mainNav.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('open');
+          navToggle.querySelector('i').className = 'fas fa-bars';
         });
       });
 
-      // Scroll to top button functionality
-      const scrollToTopBtn = document.querySelector(".scroll-to-top");
-
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          scrollToTopBtn.classList.add("visible");
-        } else {
-          scrollToTopBtn.classList.remove("visible");
+      // Dropdown click-toggle on mobile
+      document.getElementById('live-toggle').addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          document.getElementById('live-menu').classList.toggle('open');
         }
       });
 
-      scrollToTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }); // Page loader
-      const pageLoader = document.querySelector(".page-loader");
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          pageLoader.classList.add("hidden");
-        }, 500);
-      });
+      // Page loader
+      window.addEventListener('load', () => setTimeout(() => document.querySelector('.page-loader').classList.add('hidden'), 400));
     </script>
   </body>
 </html>
