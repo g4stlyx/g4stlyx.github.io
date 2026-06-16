@@ -1,0 +1,1 @@
+my personal portfolio website, works on <a href="https://g4stly.tr">g4stly.tr</a>
