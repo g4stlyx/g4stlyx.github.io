@@ -57,10 +57,9 @@
         <div class="header-content">
           <a class="name" href="https://g4stly.tr">g4stly</a>
           <nav id="main-nav">
-            <a href="#featured">Featured</a>
-            <a href="#backend">Backend</a>
-            <a href="#frontend">Frontend</a>
-            <a href="#others">Others</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#featured">Projects</a>
             <div class="dropdown">
               <a href="#" class="dropdown-toggle" id="live-toggle">Live <i class="fas fa-caret-down"></i></a>
               <div class="dropdown-menu" id="live-menu">
@@ -114,6 +113,95 @@
               <i class="fab fa-linkedin"></i> sef4
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──── EXPERIENCE ──── -->
+    <section id="experience" class="career-section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="career-list">
+          <article class="career-row">
+            <div class="career-row-header">
+              <div>
+                <h3>FurtherUp</h3>
+                <p class="career-role">Full-stack Engineer <span>· Contract</span></p>
+              </div>
+              <div class="career-row-meta">
+                <a href="https://drive.further-up.net" target="_blank" rel="noopener noreferrer" class="link-btn live"><i class="fas fa-external-link-alt"></i> FurtherUp Drive</a>
+                <p class="career-period">Apr 2025 — Present</p>
+              </div>
+            </div>
+            <p class="career-location"><i class="fas fa-location-dot"></i> Kadıköy, Istanbul · Remote</p>
+            <p class="career-description">Built and deployed an enterprise coaching platform from scratch: a multi-tenant Spring Boot and React system with JWT RBAC, assessment engines, SMART goal tracking, package-based feature gates, Iyzico subscriptions, email workflows, cloud storage, backups, and production infrastructure.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+              <span class="tech-tag"><i class="devicon-react-original colored"></i> React / TypeScript</span>
+              <span class="tech-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+              <span class="tech-tag"><i class="fas fa-lock"></i> JWT / RBAC</span>
+              <span class="tech-tag"><i class="fas fa-cloud"></i> Cloudflare R2</span>
+            </div>
+          </article>
+
+          <article class="career-row">
+            <div class="career-row-header">
+              <div>
+                <h3>Istanbul Arel University <span class="career-org-divider">/</span> TÜBİTAK TEYDEB 1505</h3>
+                <p class="career-role">Scholarship Student</p>
+              </div>
+              <p class="career-period">Feb 2025 — Dec 2025</p>
+            </div>
+            <p class="career-location"><i class="fas fa-location-dot"></i> Büyükçekmece, Istanbul</p>
+            <p class="career-description">Developed C-based infrared image-processing algorithms on ESP32 embedded devices for human detection in smart buildings, optimizing real-time processing under tight hardware constraints. Also built Flutter modules for live sensor monitoring and device-control dashboards.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-c-plain colored"></i> C</span>
+              <span class="tech-tag"><i class="fas fa-microchip"></i> ESP32</span>
+              <span class="tech-tag"><i class="devicon-flutter-plain colored"></i> Flutter</span>
+              <span class="tech-tag"><i class="fas fa-eye"></i> Infrared CV</span>
+            </div>
+          </article>
+
+          <article class="career-row">
+            <div class="career-row-header">
+              <div>
+                <h3>HAVELSAN</h3>
+                <p class="career-role">AI Software Engineer Intern</p>
+              </div>
+              <div class="career-row-meta">
+                <a href="https://github.com/g4stlyx/horizon_line_segmentation" target="_blank" rel="noopener noreferrer" class="link-btn code"><i class="fab fa-github"></i> HLD Project</a>
+                <p class="career-period">Jul 2025 — Aug 2025</p>
+              </div>
+            </div>
+            <p class="career-location"><i class="fas fa-location-dot"></i> Pendik, Istanbul · Artificial Intelligence &amp; Image Processing Team</p>
+            <p class="career-description">Worked on maritime computer-vision pipelines for real-time detection and segmentation. Implemented CUDA-accelerated preprocessing for dehazing and glare filtering, evaluated horizon-segmentation approaches, and optimized inference for high-FPS systems.</p>
+            <div class="tech-stack">
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> PyTorch</span>
+              <span class="tech-tag"><i class="devicon-cuda-plain colored"></i> CUDA</span>
+              <span class="tech-tag"><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+              <span class="tech-tag"><i class="fas fa-eye"></i> YOLO / RT-DETR / U-Net</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──── EDUCATION ──── -->
+    <section id="education" class="career-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="career-list">
+          <article class="career-row education-row">
+            <div class="career-row-header">
+              <div>
+                <h3>Istanbul Arel University</h3>
+                <p class="career-role">Bachelor of Engineering, Computer Engineering <span>· 3.96 / 4.00</span></p>
+              </div>
+              <p class="career-period">Aug 2021 — Jun 2026</p>
+            </div>
+            <p class="career-location"><i class="fas fa-location-dot"></i> Istanbul, Türkiye</p>
+            <p class="career-description"><strong>University Valedictorian</strong> — ranked first among all undergraduate graduates, as well as Faculty of Engineering and Computer Engineering Department Valedictorian. Focused on backend systems, AI, computer vision, and secure system design.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -635,7 +723,7 @@
           if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
         });
       }, { threshold: 0.06 });
-      document.querySelectorAll('.project-row').forEach(row => observer.observe(row));
+      document.querySelectorAll('.project-row, .career-row').forEach(row => observer.observe(row));
 
       // Hamburger nav toggle
       const navToggle = document.getElementById('nav-toggle');
