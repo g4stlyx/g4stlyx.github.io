@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="assets/92.png" />
     <link rel="shortcut icon" type="image/png" href="assets/92.png" />
     <meta
+      id="meta-description"
       name="description"
       content="Portfolio of Sefa Ağardan — Backend Engineer specializing in Spring Boot, AI/CV pipelines, and scalable system design."
     />
@@ -15,7 +16,7 @@
     <link rel="canonical" href="https://g4stly.tr/" />
 
     <meta property="og:title" content="Sefa Ağardan | g4stly" />
-    <meta property="og:description" content="Backend Engineer — Spring Boot, AI/CV, scalable systems." />
+    <meta id="og-description" property="og:description" content="Backend Engineer — Spring Boot, AI/CV, scalable systems." />
     <meta property="og:image" content="https://g4stly.tr/assets/92.png" />
     <meta property="og:url" content="https://g4stly.tr/" />
     <meta property="og:type" content="website" />
@@ -57,31 +58,35 @@
         <div class="header-content">
           <a class="name" href="https://g4stly.tr">g4stly</a>
           <nav id="main-nav">
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#featured">Projects</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#education" data-i18n="nav.education">Education</a>
+            <a href="#featured" data-i18n="nav.projects">Projects</a>
             <div class="dropdown">
-              <a href="#" class="dropdown-toggle" id="live-toggle">Live <i class="fas fa-caret-down"></i></a>
+              <a href="#" class="dropdown-toggle" id="live-toggle"><span data-i18n="nav.live">Live</span> <i class="fas fa-caret-down"></i></a>
               <div class="dropdown-menu" id="live-menu">
                 <a href="https://drive.further-up.net" target="_blank">FurtherUp Drive</a>
                 <a href="https://further-up.net" target="_blank">FurtherUp</a>
                 <a href="https://atlidepohizmetleri.com" target="_blank">Atlı Depo Hizmetleri</a>
                 <a href="https://g4stly.tr/pokedex" target="_blank">Pokedex</a>
-                <a href="https://links.g4stly.tr" target="_blank">Links Page</a>
-                <a href="https://instagram.g4stly.tr" target="_blank">Instagram Clone (2023)</a>
-                <a href="https://facebook.g4stly.tr" target="_blank">Facebook Clone (2023)</a>
+                <a href="https://links.g4stly.tr" target="_blank" data-i18n="live.linksPage">Links Page</a>
+                <a href="https://instagram.g4stly.tr" target="_blank" data-i18n="live.instagramClone">Instagram Clone (2023)</a>
+                <a href="https://facebook.g4stly.tr" target="_blank" data-i18n="live.facebookClone">Facebook Clone (2023)</a>
               </div>
             </div>
-            <a href="#contact">Contact</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
           </nav>
           <div class="header-right">
+            <div class="language-switcher" role="group" aria-label="Language selection">
+              <button type="button" data-language="en" aria-pressed="true">EN</button>
+              <button type="button" data-language="tr" aria-pressed="false">TR</button>
+            </div>
             <div class="theme-toggle">
-              <button id="theme-toggle-btn" aria-label="Toggle theme">
+              <button id="theme-toggle-btn" aria-label="Toggle theme" data-i18n-aria="aria.toggleTheme">
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
               </button>
             </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" data-i18n-aria="aria.toggleNavigation">
               <i class="fas fa-bars"></i>
             </button>
           </div>
@@ -95,10 +100,7 @@
         <div class="hero-inner">
           <h1>Sefa Ağardan</h1>
           <h2>Backend Engineer</h2>
-          <p class="hero-bio">
-            Building scalable backend systems and AI-powered applications.
-            Experienced in multi-tenant architectures, secure REST APIs, and production-grade computer vision pipelines.
-          </p>
+          <p class="hero-bio" data-i18n="hero.bio">Building scalable backend systems and AI-powered applications. Experienced in multi-tenant architectures, secure REST APIs, and production-grade computer vision pipelines.</p>
           <div class="hero-contacts">
             <a href="https://www.g4stly.tr" target="_blank" class="contact-link">
               <i class="fas fa-globe"></i> g4stly.tr
@@ -120,21 +122,21 @@
     <!-- ──── EXPERIENCE ──── -->
     <section id="experience" class="career-section">
       <div class="container">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title" data-i18n="sections.experience">Experience</h2>
         <div class="career-list">
           <article class="career-row">
             <div class="career-row-header">
               <div>
                 <h3>FurtherUp</h3>
-                <p class="career-role">Full-stack Engineer <span>· Contract</span></p>
+                <p class="career-role"><span data-i18n="experience.furtherUp.role">Full-stack Engineer</span> <span data-i18n="common.contract">· Contract</span></p>
               </div>
               <div class="career-row-meta">
                 <a href="https://drive.further-up.net" target="_blank" rel="noopener noreferrer" class="link-btn live"><i class="fas fa-external-link-alt"></i> FurtherUp Drive</a>
-                <p class="career-period">Apr 2025 — Present</p>
+                <p class="career-period" data-i18n="experience.furtherUp.period">Apr 2025 — Present</p>
               </div>
             </div>
-            <p class="career-location"><i class="fas fa-location-dot"></i> Kadıköy, Istanbul · Remote</p>
-            <p class="career-description">Built and deployed an enterprise coaching platform from scratch: a multi-tenant Spring Boot and React system with JWT RBAC, assessment engines, SMART goal tracking, package-based feature gates, Iyzico subscriptions, email workflows, cloud storage, backups, and production infrastructure.</p>
+            <p class="career-location"><i class="fas fa-location-dot"></i> <span data-i18n="experience.furtherUp.location">Kadıköy, Istanbul · Remote</span></p>
+            <p class="career-description" data-i18n="experience.furtherUp.description">Built and deployed an enterprise coaching platform from scratch: a multi-tenant Spring Boot and React system with JWT RBAC, assessment engines, SMART goal tracking, package-based feature gates, Iyzico subscriptions, email workflows, cloud storage, backups, and production infrastructure.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
               <span class="tech-tag"><i class="devicon-react-original colored"></i> React / TypeScript</span>
@@ -148,12 +150,12 @@
             <div class="career-row-header">
               <div>
                 <h3>Istanbul Arel University <span class="career-org-divider">/</span> TÜBİTAK TEYDEB 1505</h3>
-                <p class="career-role">Scholarship Student</p>
+                <p class="career-role" data-i18n="experience.tubitak.role">Scholarship Student</p>
               </div>
-              <p class="career-period">Feb 2025 — Dec 2025</p>
+              <p class="career-period" data-i18n="experience.tubitak.period">Feb 2025 — Dec 2025</p>
             </div>
-            <p class="career-location"><i class="fas fa-location-dot"></i> Büyükçekmece, Istanbul</p>
-            <p class="career-description">Developed C-based infrared image-processing algorithms on ESP32 embedded devices for human detection in smart buildings, optimizing real-time processing under tight hardware constraints. Also built Flutter modules for live sensor monitoring and device-control dashboards.</p>
+            <p class="career-location"><i class="fas fa-location-dot"></i> <span data-i18n="experience.tubitak.location">Büyükçekmece, Istanbul</span></p>
+            <p class="career-description" data-i18n="experience.tubitak.description">Developed C-based infrared image-processing algorithms on ESP32 embedded devices for human detection in smart buildings, optimizing real-time processing under tight hardware constraints. Also built Flutter modules for live sensor monitoring and device-control dashboards.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-c-plain colored"></i> C</span>
               <span class="tech-tag"><i class="fas fa-microchip"></i> ESP32</span>
@@ -166,15 +168,15 @@
             <div class="career-row-header">
               <div>
                 <h3>HAVELSAN</h3>
-                <p class="career-role">AI Software Engineer Intern</p>
+                <p class="career-role" data-i18n="experience.havelsan.role">AI Software Engineer Intern</p>
               </div>
               <div class="career-row-meta">
                 <a href="https://github.com/g4stlyx/horizon_line_segmentation" target="_blank" rel="noopener noreferrer" class="link-btn code"><i class="fab fa-github"></i> HLD Project</a>
-                <p class="career-period">Jul 2025 — Aug 2025</p>
+                <p class="career-period" data-i18n="experience.havelsan.period">Jul 2025 — Aug 2025</p>
               </div>
             </div>
-            <p class="career-location"><i class="fas fa-location-dot"></i> Pendik, Istanbul · Artificial Intelligence &amp; Image Processing Team</p>
-            <p class="career-description">Worked on maritime computer-vision pipelines for real-time detection and segmentation. Implemented CUDA-accelerated preprocessing for dehazing and glare filtering, evaluated horizon-segmentation approaches, and optimized inference for high-FPS systems.</p>
+            <p class="career-location"><i class="fas fa-location-dot"></i> <span data-i18n="experience.havelsan.location">Pendik, Istanbul · Artificial Intelligence &amp; Image Processing Team</span></p>
+            <p class="career-description" data-i18n="experience.havelsan.description">Worked on maritime computer-vision pipelines for real-time detection and segmentation. Implemented CUDA-accelerated preprocessing for dehazing and glare filtering, evaluated horizon-segmentation approaches, and optimized inference for high-FPS systems.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> PyTorch</span>
               <span class="tech-tag"><i class="devicon-cuda-plain colored"></i> CUDA</span>
@@ -189,18 +191,18 @@
     <!-- ──── EDUCATION ──── -->
     <section id="education" class="career-section">
       <div class="container">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title" data-i18n="sections.education">Education</h2>
         <div class="career-list">
           <article class="career-row education-row">
             <div class="career-row-header">
               <div>
-                <h3>Istanbul Arel University</h3>
-                <p class="career-role">Bachelor of Engineering, Computer Engineering <span>· 3.96 / 4.00</span></p>
+                <h3 data-i18n="education.university">Istanbul Arel University</h3>
+                <p class="career-role"><span data-i18n="education.degree">Bachelor of Engineering, Computer Engineering</span> <span>· 3.96 / 4.00</span></p>
               </div>
-              <p class="career-period">Aug 2021 — Jun 2026</p>
+              <p class="career-period" data-i18n="education.period">Aug 2021 — Jun 2026</p>
             </div>
-            <p class="career-location"><i class="fas fa-location-dot"></i> Istanbul, Türkiye</p>
-            <p class="career-description"><strong>University Valedictorian</strong> — ranked first among all undergraduate graduates, as well as Faculty of Engineering and Computer Engineering Department Valedictorian. Focused on backend systems, AI, computer vision, and secure system design.</p>
+            <p class="career-location"><i class="fas fa-location-dot"></i> <span data-i18n="education.location">Istanbul, Türkiye</span></p>
+            <p class="career-description"><strong data-i18n="education.valedictorian">University Valedictorian</strong><span data-i18n="education.description"> — ranked first among all undergraduate graduates, as well as Faculty of Engineering and Computer Engineering Department Valedictorian. Focused on backend systems, AI, computer vision, and secure system design.</span></p>
           </article>
         </div>
       </div>
@@ -209,7 +211,7 @@
     <!-- ──── FEATURED PROJECTS ──── -->
     <section id="featured" class="projects">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title" data-i18n="sections.featuredProjects">Featured Projects</h2>
         <div class="project-list">
 
           <div class="project-row">
@@ -219,8 +221,8 @@
                 <a href="https://drive.further-up.net" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
               </div>
             </div>
-            <h3 class="project-row-title">FurtherUp — Enterprise Coaching Platform</h3>
-            <p class="project-row-desc">Built and deployed an enterprise coaching platform from scratch. Multi-tenant Spring Boot/React system with JWT RBAC, assessment engines, SMART goal tracking, package-based feature gates, Iyzico subscription checkout, admin dashboard, email workflows, cloud storage, backups, and production infrastructure management.</p>            
+            <h3 class="project-row-title" data-i18n="projects.furtherUp.title">FurtherUp — Enterprise Coaching Platform</h3>
+            <p class="project-row-desc" data-i18n="projects.furtherUp.description">Built and deployed an enterprise coaching platform from scratch. Multi-tenant Spring Boot/React system with JWT RBAC, assessment engines, SMART goal tracking, package-based feature gates, Iyzico subscription checkout, admin dashboard, email workflows, cloud storage, backups, and production infrastructure management.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -238,12 +240,12 @@
             <div class="project-row-top">
               <div class="project-row-badges">
                 <span class="category-badge backend">Backend</span>
-                <span class="category-badge other">Thesis</span>
+                <span class="category-badge other" data-i18n="badges.thesis">Thesis</span>
               </div>
               <div class="project-row-links"></div>
             </div>
-            <h3 class="project-row-title">Tam Finans Multi-Platform Fintech System — Graduation Thesis/Project</h3>
-            <p class="project-row-desc">Graduation thesis/project developed with the Tam Finans Product Team in a professional product workflow. Primarily owned the Spring Boot backend/API layer for a multi-platform fintech system consumed by a Flutter mobile app and admin web panel, covering local business discovery, secure messaging (E2EE), quiz engagement, JWT/RBAC, audit logging, push notifications, WebSocket/E2EE support, and Cloudflare R2 media handling.</p>
+            <h3 class="project-row-title" data-i18n="projects.tamFinans.title">Tam Finans Multi-Platform Fintech System — Graduation Thesis/Project</h3>
+            <p class="project-row-desc" data-i18n="projects.tamFinans.description">Graduation thesis/project developed with the Tam Finans Product Team in a professional product workflow. Primarily owned the Spring Boot backend/API layer for a multi-platform fintech system consumed by a Flutter mobile app and admin web panel, covering local business discovery, secure messaging (E2EE), quiz engagement, JWT/RBAC, audit logging, push notifications, WebSocket/E2EE support, and Cloudflare R2 media handling.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -261,8 +263,8 @@
               <span class="category-badge production">Production</span>
               <div class="project-row-links"></div>
             </div>
-            <h3 class="project-row-title">Smart Hospital System — Kanuni Sultan Süleyman Hospital</h3>
-            <p class="project-row-desc">Integrated healthcare platform including patient and staff mobile apps, admin desktop panel, and Spring Boot backend. Designed for low-infrastructure environments with real-time navigation and emergency coordination capabilities.</p>
+            <h3 class="project-row-title" data-i18n="projects.smartHospital.title">Smart Hospital System — Kanuni Sultan Süleyman Hospital</h3>
+            <p class="project-row-desc" data-i18n="projects.smartHospital.description">Integrated healthcare platform including patient and staff mobile apps, admin desktop panel, and Spring Boot backend. Designed for low-infrastructure environments with real-time navigation and emergency coordination capabilities.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -279,8 +281,8 @@
               <span class="category-badge production">Production</span>
               <div class="project-row-links"></div>
             </div>
-            <h3 class="project-row-title">PetNest — Pet-Friendly Venue Finder Platform</h3>
-            <p class="project-row-desc">Full-stack platform for discovering pet-friendly venues in Turkey. Includes a Spring Boot REST API, Flutter mobile app for users and venue owners, and a React web app. Engineered with JWT/Argon2id security, TOTP 2FA, rate limiting, and automated backups.</p>
+            <h3 class="project-row-title" data-i18n="projects.petNest.title">PetNest — Pet-Friendly Venue Finder Platform</h3>
+            <p class="project-row-desc" data-i18n="projects.petNest.description">Full-stack platform for discovering pet-friendly venues in Turkey. Includes a Spring Boot REST API, Flutter mobile app for users and venue owners, and a React web app. Engineered with JWT/Argon2id security, TOTP 2FA, rate limiting, and automated backups.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -300,8 +302,8 @@
                 <a href="https://atlidepohizmetleri.com" target="_blank" class="link-btn live"><i class="fas fa-external-link-alt"></i> Live</a>
               </div>
             </div>
-            <h3 class="project-row-title">Atlı Logistics — Workforce Management System</h3>
-            <p class="project-row-desc">Workforce management platform for logistics operations. Hierarchical admin roles, secure task assignment, payment tracking, and worker verification. Scalable REST backend with React dashboard.</p>
+            <h3 class="project-row-title" data-i18n="projects.atliLogistics.title">Atlı Logistics — Workforce Management System</h3>
+            <p class="project-row-desc" data-i18n="projects.atliLogistics.description">Workforce management platform for logistics operations. Hierarchical admin roles, secure task assignment, payment tracking, and worker verification. Scalable REST backend with React dashboard.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -317,8 +319,8 @@
               <span class="category-badge ai">AI / CV</span>
               <div class="project-row-links"></div>
             </div>
-            <h3 class="project-row-title">Military Aircraft Classification System — Deep Learning Pipeline</h3>
-            <p class="project-row-desc">Deep learning pipeline classifying 89 aircraft types across 38,826 images using EfficientNet-B4. Achieved 92.86% Top-1 accuracy with weighted loss and aggressive augmentation to address class imbalance. Full evaluation pipeline and production-ready inference.</p>
+            <h3 class="project-row-title" data-i18n="projects.militaryAircraft.title">Military Aircraft Classification System — Deep Learning Pipeline</h3>
+            <p class="project-row-desc" data-i18n="projects.militaryAircraft.description">Deep learning pipeline classifying 89 aircraft types across 38,826 images using EfficientNet-B4. Achieved 92.86% Top-1 accuracy with weighted loss and aggressive augmentation to address class imbalance. Full evaluation pipeline and production-ready inference.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="devicon-pytorch-plain colored"></i> PyTorch</span>
@@ -339,8 +341,8 @@
                 <a href="https://github.com/g4stlyx/chatbot" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Full-Stack AI Chatbot — Spring Boot + Llama3</h3>
-            <p class="project-row-desc">Production-ready chatbot platform built with Spring Boot and React, powered by Llama3 via Ollama. Features JWT auth with TOTP 2FA, Redis caching, multi-level admin panel, session and project management, public chat sharing, 8-layer prompt injection protection, and automated daily database backups. Fully Dockerized.</p>
+            <h3 class="project-row-title" data-i18n="projects.chatbot.title">Full-Stack AI Chatbot — Spring Boot + Llama3</h3>
+            <p class="project-row-desc" data-i18n="projects.chatbot.description">Production-ready chatbot platform built with Spring Boot and React, powered by Llama3 via Ollama. Features JWT auth with TOTP 2FA, Redis caching, multi-level admin panel, session and project management, public chat sharing, 8-layer prompt injection protection, and automated daily database backups. Fully Dockerized.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -361,8 +363,8 @@
                 <a href="https://github.com/g4stlyx/horizon_line_segmentation" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Maritime Horizon Line Segmentation — Multi-Approach Research</h3>
-            <p class="project-row-desc">Comprehensive research into maritime horizon detection spanning traditional CV (K-means, contour detection) through deep learning. Best results with a 3-class U-Net (sky/water/object) integrated with RT-DETR for real-time object-aware segmentation, pixel/physical distance estimation, and support for video, webcam, and static image inputs.</p>
+            <h3 class="project-row-title" data-i18n="projects.maritimeHorizon.title">Maritime Horizon Line Segmentation — Multi-Approach Research</h3>
+            <p class="project-row-desc" data-i18n="projects.maritimeHorizon.description">Comprehensive research into maritime horizon detection spanning traditional CV (K-means, contour detection) through deep learning. Best results with a 3-class U-Net (sky/water/object) integrated with RT-DETR for real-time object-aware segmentation, pixel/physical distance estimation, and support for video, webcam, and static image inputs.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="devicon-pytorch-plain colored"></i> PyTorch</span>
@@ -379,8 +381,8 @@
               <span class="category-badge security">Security</span>
               <div class="project-row-links"></div>
             </div>
-            <h3 class="project-row-title">Arelim University — Webpage Vulnerability Report</h3>
-            <p class="project-row-desc">Comprehensive security analysis of arelim.arel.edu.tr. Identified unauthorized access, data leaks via REST APIs, XSS vulnerabilities, and SQL injection. Detailed exploitation scenarios and OWASP-based mitigations. Advised by Asst. Prof. Dr. Tugberk KOCATEKIN.</p>
+            <h3 class="project-row-title" data-i18n="projects.arelimReport.title">Arelim University — Webpage Vulnerability Report</h3>
+            <p class="project-row-desc" data-i18n="projects.arelimReport.description">Comprehensive security analysis of arelim.arel.edu.tr. Identified unauthorized access, data leaks via REST APIs, XSS vulnerabilities, and SQL injection. Detailed exploitation scenarios and OWASP-based mitigations. Advised by Asst. Prof. Dr. Tugberk KOCATEKIN.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="fas fa-shield-alt"></i> Broken Access Control</span>
               <span class="tech-tag"><i class="fas fa-database"></i> SQL Injection</span>
@@ -396,7 +398,7 @@
     <!-- ──── BACKEND PROJECTS ──── -->
     <section id="backend" class="projects">
       <div class="container">
-        <h2 class="section-title">Backend Projects</h2>
+        <h2 class="section-title" data-i18n="sections.backendProjects">Backend Projects</h2>
         <div class="project-list">
 
           <div class="project-row">
@@ -406,8 +408,8 @@
                 <a href="https://github.com/g4stlyx/flashcardApp" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Flashcard App (Full-Stack)</h3>
-            <p class="project-row-desc">Full-stack web app where users create flashcard sets and share them publicly or with friends. Secure auth: JWT, salts, pepper, Argon2. Friends system and admin dashboard.</p>
+            <h3 class="project-row-title" data-i18n="projects.flashcard.title">Flashcard App (Full-Stack)</h3>
+            <p class="project-row-desc" data-i18n="projects.flashcard.description">Full-stack web app where users create flashcard sets and share them publicly or with friends. Secure auth: JWT, salts, pepper, Argon2. Friends system and admin dashboard.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
               <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC</span>
@@ -425,8 +427,8 @@
                 <a href="https://github.com/g4stlyx/FakeAiChecker" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Fake AI Checker (Full-Stack)</h3>
-            <p class="project-row-desc">Secure ASP.NET Core MVC app simulating AI content detection while scanning uploaded files and archives for leaked API keys, tokens, and secrets.</p>
+            <h3 class="project-row-title" data-i18n="projects.fakeAiChecker.title">Fake AI Checker (Full-Stack)</h3>
+            <p class="project-row-desc" data-i18n="projects.fakeAiChecker.description">Secure ASP.NET Core MVC app simulating AI content detection while scanning uploaded files and archives for leaked API keys, tokens, and secrets.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
               <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC</span>
@@ -443,8 +445,8 @@
                 <a href="https://github.com/g4stlyx/eCommerceFullStack" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">E-Commerce App (Full-Stack)</h3>
-            <p class="project-row-desc">Full-stack e-commerce with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
+            <h3 class="project-row-title" data-i18n="projects.ecommerceApp.title">E-Commerce App (Full-Stack)</h3>
+            <p class="project-row-desc" data-i18n="projects.ecommerceApp.description">Full-stack e-commerce with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -462,8 +464,8 @@
                 <a href="https://github.com/g4stlyx/library_management_system" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Library Management System (Full-Stack)</h3>
-            <p class="project-row-desc">Server-side rendered library system with JWT auth, Argon2 hashing (salting + peppering). Books, users, and loan management.</p>
+            <h3 class="project-row-title" data-i18n="projects.library.title">Library Management System (Full-Stack)</h3>
+            <p class="project-row-desc" data-i18n="projects.library.description">Server-side rendered library system with JWT auth, Argon2 hashing (salting + peppering). Books, users, and loan management.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-csharp-plain colored"></i> C#</span>
               <span class="tech-tag"><i class="devicon-dotnetcore-plain colored"></i> .NET MVC SSR</span>
@@ -479,8 +481,8 @@
                 <a href="https://github.com/g4stlyx/todoFullStack" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Todo App (Full-Stack)</h3>
-            <p class="project-row-desc">Full-stack todo app with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
+            <h3 class="project-row-title" data-i18n="projects.todo.title">Todo App (Full-Stack)</h3>
+            <p class="project-row-desc" data-i18n="projects.todo.description">Full-stack todo app with unit tests, validations, auth, security, responsive design, and Swagger API documentation.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-java-plain colored"></i> Java</span>
               <span class="tech-tag"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
@@ -499,8 +501,8 @@
                 <a href="https://github.com/g4stlyx/eCommerceAPI/" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">E-Commerce REST API</h3>
-            <p class="project-row-desc">RESTful e-commerce API with CRUD operations, role-based auth, JWT tokens, and security middleware.</p>
+            <h3 class="project-row-title" data-i18n="projects.ecommerceApi.title">E-Commerce REST API</h3>
+            <p class="project-row-desc" data-i18n="projects.ecommerceApi.description">RESTful e-commerce API with CRUD operations, role-based auth, JWT tokens, and security middleware.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
               <span class="tech-tag"><i class="devicon-express-original"></i> Express</span>
@@ -515,7 +517,7 @@
     <!-- ──── FRONTEND PROJECTS ──── -->
     <section id="frontend" class="projects">
       <div class="container">
-        <h2 class="section-title">Frontend Projects</h2>
+        <h2 class="section-title" data-i18n="sections.frontendProjects">Frontend Projects</h2>
         <div class="project-list">
 
           <div class="project-row">
@@ -526,8 +528,8 @@
                 <a href="https://github.com/g4stlyx/pokedex" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Pokedex + Pokemon Battles</h3>
-            <p class="project-row-desc">3-page app (Pokémons, Details, Battles) using PokéAPI. Responsive design with Bootstrap and vanilla JS.</p>
+            <h3 class="project-row-title" data-i18n="projects.pokedex.title">Pokedex + Pokemon Battles</h3>
+            <p class="project-row-desc" data-i18n="projects.pokedex.description">3-page app (Pokémons, Details, Battles) using PokéAPI. Responsive design with Bootstrap and vanilla JS.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
               <span class="tech-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
@@ -544,8 +546,8 @@
                 <a href="https://github.com/g4stlyx/instagramClone" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Instagram Clone</h3>
-            <p class="project-row-desc">5 main pages of Instagram: home, explore, reels, messages, profile. Fully responsive, built with ReactJS.</p>
+            <h3 class="project-row-title" data-i18n="projects.instagramClone.title">Instagram Clone</h3>
+            <p class="project-row-desc" data-i18n="projects.instagramClone.description">5 main pages of Instagram: home, explore, reels, messages, profile. Fully responsive, built with ReactJS.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
               <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
@@ -560,8 +562,8 @@
                 <a href="https://github.com/g4stlyx/facebookClone" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Facebook Clone</h3>
-            <p class="project-row-desc">5 main sections of Facebook: home, friends, video, marketplace, gaming. Fully responsive, built with ReactJS.</p>
+            <h3 class="project-row-title" data-i18n="projects.facebookClone.title">Facebook Clone</h3>
+            <p class="project-row-desc" data-i18n="projects.facebookClone.description">5 main sections of Facebook: home, friends, video, marketplace, gaming. Fully responsive, built with ReactJS.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-react-original colored"></i> React</span>
               <span class="tech-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
@@ -570,13 +572,13 @@
 
           <div class="project-row">
             <div class="project-row-top">
-              <span class="category-badge frontend">Mobile</span>
+              <span class="category-badge frontend" data-i18n="badges.mobile">Mobile</span>
               <div class="project-row-links">
                 <a href="https://github.com/g4stlyx/ai_super_app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">AI Super App (Flutter Mobile)</h3>
-            <p class="project-row-desc">AI-powered Flutter app with chatbots (Gemini + OpenAI), face analysis (emotion, age, gender recognition), and document translation tools.</p>
+            <h3 class="project-row-title" data-i18n="projects.aiSuperApp.title">AI Super App (Flutter Mobile)</h3>
+            <p class="project-row-desc" data-i18n="projects.aiSuperApp.description">AI-powered Flutter app with chatbots (Gemini + OpenAI), face analysis (emotion, age, gender recognition), and document translation tools.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-flutter-plain colored"></i> Flutter</span>
               <span class="tech-tag"><i class="devicon-dart-plain colored"></i> Dart</span>
@@ -592,8 +594,8 @@
                 <a href="https://github.com/g4stlyx/collaborative-todo-app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Collaborative Todo App</h3>
-            <p class="project-row-desc">Register, login, add friends, share todos. Could be extended into a Notion-like page system with TypeScript and Firebase.</p>
+            <h3 class="project-row-title" data-i18n="projects.collaborativeTodo.title">Collaborative Todo App</h3>
+            <p class="project-row-desc" data-i18n="projects.collaborativeTodo.description">Register, login, add friends, share todos. Could be extended into a Notion-like page system with TypeScript and Firebase.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
               <span class="tech-tag"><i class="devicon-firebase-plain colored"></i> Firebase</span>
@@ -607,18 +609,18 @@
     <!-- ──── OTHER PROJECTS ──── -->
     <section id="others" class="projects">
       <div class="container">
-        <h2 class="section-title">Other Projects</h2>
+        <h2 class="section-title" data-i18n="sections.otherProjects">Other Projects</h2>
         <div class="project-list">
 
           <div class="project-row">
             <div class="project-row-top">
-              <span class="category-badge other">Script</span>
+              <span class="category-badge other" data-i18n="badges.script">Script</span>
               <div class="project-row-links">
                 <a href="https://github.com/g4stlyx/lecture_content_fetcher" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Lecture Content Fetcher</h3>
-            <p class="project-row-desc">Logs into Arel UZEM, scans courses for downloadable lecture content, and auto-downloads new files into the appropriate local folders.</p>
+            <h3 class="project-row-title" data-i18n="projects.lectureFetcher.title">Lecture Content Fetcher</h3>
+            <p class="project-row-desc" data-i18n="projects.lectureFetcher.description">Logs into Arel UZEM, scans courses for downloadable lecture content, and auto-downloads new files into the appropriate local folders.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="fas fa-spider"></i> BeautifulSoup</span>
@@ -632,8 +634,8 @@
                 <a href="https://github.com/g4stlyx/vulnerability_scanner/" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Vulnerability Scanner</h3>
-            <p class="project-row-desc">Whois &amp; IP lookup, path scanning, reverse lookup, OWASP Top 10 scanning (SQL injection, XSS, etc.). Generates a Markdown report with all findings.</p>
+            <h3 class="project-row-title" data-i18n="projects.vulnerabilityScanner.title">Vulnerability Scanner</h3>
+            <p class="project-row-desc" data-i18n="projects.vulnerabilityScanner.description">Whois &amp; IP lookup, path scanning, reverse lookup, OWASP Top 10 scanning (SQL injection, XSS, etc.). Generates a Markdown report with all findings.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="fas fa-shield-alt"></i> OWASP</span>
@@ -642,13 +644,13 @@
 
           <div class="project-row">
             <div class="project-row-top">
-              <span class="category-badge other">Game</span>
+              <span class="category-badge other" data-i18n="badges.game">Game</span>
               <div class="project-row-links">
                 <a href="https://github.com/g4stlyx/arcade_games_app" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">Arcade Games Super App</h3>
-            <p class="project-row-desc">Super app with classic arcade games re-coded in Python: Space Invaders, Snake, Pacman, Tetris, Flappy Bird.</p>
+            <h3 class="project-row-title" data-i18n="projects.arcadeGames.title">Arcade Games Super App</h3>
+            <p class="project-row-desc" data-i18n="projects.arcadeGames.description">Super app with classic arcade games re-coded in Python: Space Invaders, Snake, Pacman, Tetris, Flappy Bird.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="fas fa-gamepad"></i> Pygame</span>
@@ -657,13 +659,13 @@
 
           <div class="project-row">
             <div class="project-row-top">
-              <span class="category-badge other">Game</span>
+              <span class="category-badge other" data-i18n="badges.game">Game</span>
               <div class="project-row-links">
                 <a href="https://github.com/g4stlyx/turkeyInvaders" target="_blank" class="link-btn code"><i class="fab fa-github"></i> Code</a>
               </div>
             </div>
-            <h3 class="project-row-title">turkeyInvaders</h3>
-            <p class="project-row-desc">An "extremely different" version of the classic Space Invaders arcade game.</p>
+            <h3 class="project-row-title" data-i18n="projects.turkeyInvaders.title">turkeyInvaders</h3>
+            <p class="project-row-desc" data-i18n="projects.turkeyInvaders.description">An "extremely different" version of the classic Space Invaders arcade game.</p>
             <div class="tech-stack">
               <span class="tech-tag"><i class="devicon-python-plain colored"></i> Python</span>
               <span class="tech-tag"><i class="fas fa-gamepad"></i> Pygame</span>
@@ -677,7 +679,7 @@
     <!-- ──── CONTACT ──── -->
     <section id="contact" class="contact-section">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title" data-i18n="sections.contact">Get In Touch</h2>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/sef4/" class="social-icon linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/g4stlyx" class="social-icon github" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -693,11 +695,165 @@
 
     <footer>
       <div class="container">
-        <p>&copy; <span id="year"></span> Sefa Ağardan. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Sefa Ağardan. <span data-i18n="footer.rights">All rights reserved.</span></p>
       </div>
     </footer>
 
     <script>
+      const turkishTranslations = {
+        'nav.experience': 'Deneyim',
+        'nav.education': 'Eğitim',
+        'nav.projects': 'Projeler',
+        'nav.live': 'Yayınlananlar',
+        'nav.contact': 'İletişim',
+        'live.linksPage': 'Bağlantılar Sayfası',
+        'live.instagramClone': 'Instagram Klonu (2023)',
+        'live.facebookClone': 'Facebook Klonu (2023)',
+        'hero.bio': 'Ölçeklenebilir backend sistemleri ve AI destekli uygulamalar geliştiriyorum. Multi-tenant mimariler, güvenli REST API\'ler ve production-grade computer vision pipeline\'ları konusunda deneyimliyim.',
+        'sections.experience': 'Deneyim',
+        'experience.furtherUp.role': 'Full-stack Engineer',
+        'common.contract': '· Sözleşmeli',
+        'experience.furtherUp.period': 'Nis 2025 — Günümüz',
+        'experience.furtherUp.location': 'Kadıköy, İstanbul · Uzaktan',
+        'experience.furtherUp.description': 'Kurumsal bir koçluk platformunu sıfırdan geliştirip yayına aldım: JWT RBAC, değerlendirme mekanizmaları, SMART hedef takibi, paket bazlı özellik kilitleri, Iyzico abonelik sistemi, e-posta akışları, bulut depolama, database backup\'ları ve production altyapısını içeren multi-tenant Spring Boot ve React sistemi.',
+        'experience.tubitak.role': 'Bursiyer',
+        'experience.tubitak.period': 'Şub 2025 — Ara 2025',
+        'experience.tubitak.location': 'Büyükçekmece, İstanbul',
+        'experience.tubitak.description': 'Akıllı binalarda insan tespiti için ESP32 gömülü cihazlarda C tabanlı kızılötesi görüntü işleme algoritmaları geliştirdim; sıkı donanım kısıtları altında gerçek zamanlı işlemeyi optimize ettim. Ayrıca canlı sensör izleme ve cihaz kontrol panelleri için Flutter modülleri geliştirdim.',
+        'experience.havelsan.role': 'AI Software Engineer Intern',
+        'experience.havelsan.period': 'Tem 2025 — Ağu 2025',
+        'experience.havelsan.location': 'Pendik, İstanbul · Yapay Zeka ve Görüntü İşleme Ekibi',
+        'experience.havelsan.description': 'Denizcilik odaklı computer vision pipeline\'larında gerçek zamanlı tespit ve segmentasyon üzerinde çalıştım. Dehazing ve glare filtering için CUDA hızlandırmalı ön işleme uyguladım, ufuk çizgisi segmentasyon yaklaşımlarını değerlendirdim ve yüksek FPS sistemlerde inference\'ı optimize ettim.',
+        'sections.education': 'Eğitim',
+        'education.university': 'İstanbul Arel Üniversitesi',
+        'education.degree': 'Bilgisayar Mühendisliği, Lisans',
+        'education.period': 'Ağu 2021 — Haz 2026',
+        'education.location': 'İstanbul, Türkiye',
+        'education.valedictorian': 'Üniversite Birincisi',
+        'education.description': ' — Tüm lisans mezunları arasında birincilik; ayrıca Mühendislik Fakültesi ve Bilgisayar Mühendisliği Bölümü birinciliği. Backend sistemleri, AI, bilgisayarlı görü ve güvenli sistem tasarımına odaklandım.',
+        'sections.featuredProjects': 'Öne Çıkan Projeler',
+        'badges.thesis': 'Tez',
+        'projects.furtherUp.title': 'FurtherUp — Kurumsal Koçluk Platformu',
+        'projects.furtherUp.description': 'Kurumsal bir koçluk platformunu sıfırdan geliştirip yayına aldım. JWT RBAC, değerlendirme mekanizmaları, SMART hedef takibi, paket bazlı özellik kilitleri, Iyzico abonelik sistemi, admin panel, e-posta akışları, bulut depolama, database backup\'ları ve production altyapı yönetimini kapsayan multi-tenant Spring Boot/React sistem.',
+        'projects.tamFinans.title': 'Tam Finans Çok Platformlu Fintech Sistemi — Mezuniyet Tezi/Projesi',
+        'projects.tamFinans.description': 'Tam Finans ürün ekibiyle profesyonel bir ürün geliştirme sürecinde yürütülen mezuniyet tezi/projesi. Flutter mobil uygulaması ve React/TypeScript admin web paneli tarafından kullanılan çok platformlu fintech sisteminin Spring Boot backend/API katmanının birincil sorumluluğunu üstlendim; yerel işletme keşfi, güvenli mesajlaşma (E2EE), quiz etkileşimi, JWT/RBAC, audit logging, push notification, WebSocket/E2EE desteği ve Cloudflare R2 medya yönetimi bu kapsamdaydı.',
+        'projects.smartHospital.title': 'Akıllı Hastane Sistemi — Kanuni Sultan Süleyman Hastanesi',
+        'projects.smartHospital.description': 'Hasta ve personel mobil uygulamaları, admin desktop paneli ve Spring Boot backend\'ini içeren entegre sağlık platformu. Düşük altyapılı ortamlar için gerçek zamanlı yönlendirme ve acil durum koordinasyonu yetenekleriyle tasarlandı.',
+        'projects.petNest.title': 'PetNest — Evcil Hayvan Dostu Mekân Keşif Platformu',
+        'projects.petNest.description': 'Türkiye\'deki evcil hayvan dostu mekânları keşfetmeye yönelik Full-stack platform. Kullanıcılar ve mekân sahipleri için Spring Boot REST API, Flutter mobil uygulaması ve React web uygulaması içerir. JWT/Argon2id güvenliği, TOTP 2FA, rate limiting ve otomatik database backup\'larıyla geliştirildi.',
+        'projects.atliLogistics.title': 'Atlı Logistics — İş Gücü Yönetim Sistemi',
+        'projects.atliLogistics.description': 'Lojistik operasyonları için iş gücü yönetim platformu. Hiyerarşik admin rolleri, güvenli görev atama, ödeme takibi ve çalışan doğrulaması sunar. React dashboard\'a sahip ölçeklenebilir REST backend.',
+        'projects.militaryAircraft.title': 'Askerî Uçak Sınıflandırma Sistemi — Deep Learning Pipeline',
+        'projects.militaryAircraft.description': 'EfficientNet-B4 kullanarak 38.826 görüntüdeki 89 uçak tipini sınıflandıran deep learning pipeline. Class imbalance sorununu gidermek için weighted loss ve aggressive augmentation kullanılarak %92,86 Top-1 accuracy elde edildi. Kapsamlı evaluation pipeline ve production-ready inference içerir.',
+        'projects.chatbot.title': 'Full-Stack AI Chatbot — Spring Boot + Llama3',
+        'projects.chatbot.description': 'Ollama üzerinden Llama3 ile güçlendirilmiş Spring Boot ve React tabanlı production-ready chatbot platformu. JWT auth, TOTP 2FA, Redis caching, çok seviyeli admin paneli, oturum ve proje yönetimi, herkese açık chat paylaşımı, 8 katmanlı prompt injection protection ve günlük otomatik database backup\'ları sunar. Tamamen Dockerized.',
+        'projects.maritimeHorizon.title': 'Denizcilikte Ufuk Çizgisi Segmentasyonu — Çok Yaklaşımlı Araştırma',
+        'projects.maritimeHorizon.description': 'Geleneksel CV yöntemlerinden (K-means, contour detection) deep learning\'e uzanan kapsamlı bir denizcilik ufuk çizgisi tespit araştırması. En iyi sonuçlar; real-time object-aware segmentation, piksel/fiziksel mesafe tahmini ile video, webcam ve statik görüntü girdisi desteği için RT-DETR ile entegre edilmiş 3 sınıflı U-Net (sky/water/object) kullanılarak elde edildi.',
+        'projects.arelimReport.title': 'Arelim Üniversitesi — Web Sayfası Güvenlik Açığı Raporu',
+        'projects.arelimReport.description': 'arelim.arel.edu.tr için kapsamlı güvenlik analizi. Yetkisiz erişim, REST API\'leri üzerinden veri sızıntıları, XSS açıkları ve SQL injection tespit edildi. Ayrıntılı exploitation senaryoları ve OWASP tabanlı mitigation önerileri, Dr. Öğr. Üyesi Tugberk KOCATEKIN danışmanlığında hazırlandı.',
+        'sections.backendProjects': 'Backend Projeleri',
+        'projects.flashcard.title': 'Flashcard App (Full-Stack)',
+        'projects.flashcard.description': 'Kullanıcıların flashcard setleri oluşturup bunları herkese açık olarak veya arkadaşlarıyla paylaşabildiği Full-stack web uygulaması. JWT, salt, pepper ve Argon2 ile güvenli kimlik doğrulama; arkadaş sistemi ve admin dashboard içerir.',
+        'projects.fakeAiChecker.title': 'Fake AI Checker (Full-Stack)',
+        'projects.fakeAiChecker.description': 'Yüklenen dosya ve arşivleri sızdırılmış API anahtarı, token ve gizli bilgiler için tararken AI content detection simülasyonu yapan güvenli ASP.NET Core MVC uygulaması.',
+        'projects.ecommerceApp.title': 'E-Commerce App (Full-Stack)',
+        'projects.ecommerceApp.description': 'Birim testleri, doğrulamalar, kimlik doğrulama, güvenlik, responsive tasarım ve Swagger API dokümantasyonu içeren Full-stack e-commerce uygulaması.',
+        'projects.library.title': 'Library Management System (Full-Stack)',
+        'projects.library.description': 'JWT ile kimlik doğrulama ve Argon2 hashing (salting + peppering) kullanan server-side rendered kütüphane sistemi. Kitap, kullanıcı ve ödünç verme yönetimi.',
+        'projects.todo.title': 'Todo App (Full-Stack)',
+        'projects.todo.description': 'Birim testleri, doğrulamalar, kimlik doğrulama, güvenlik, responsive tasarım ve Swagger API dokümantasyonu içeren Full-stack todo uygulaması.',
+        'projects.ecommerceApi.title': 'E-Commerce REST API',
+        'projects.ecommerceApi.description': 'CRUD operasyonları, rol tabanlı kimlik doğrulama, JWT token\'ları ve security middleware içeren RESTful e-commerce API.',
+        'sections.frontendProjects': 'Frontend Projeleri',
+        'projects.pokedex.title': 'Pokedex + Pokémon Battles',
+        'projects.pokedex.description': 'PokéAPI kullanan üç sayfalı uygulama: Pokémonlar, detaylar ve savaşlar. Bootstrap ve vanilla JS ile responsive olarak geliştirildi.',
+        'projects.instagramClone.title': 'Instagram Clone',
+        'projects.instagramClone.description': 'Instagram\'ın beş ana sayfası: ana sayfa, keşfet, reels, mesajlar ve profil. ReactJS ile tamamen responsive olarak geliştirildi.',
+        'projects.facebookClone.title': 'Facebook Clone',
+        'projects.facebookClone.description': 'Facebook\'un beş ana bölümü: ana sayfa, arkadaşlar, video, marketplace ve gaming. ReactJS ile tamamen responsive olarak geliştirildi.',
+        'badges.mobile': 'Mobile',
+        'projects.aiSuperApp.title': 'AI Super App (Flutter Mobile)',
+        'projects.aiSuperApp.description': 'Gemini ve OpenAI tabanlı chatbot\'lar, yüz analizi (duygu, yaş ve cinsiyet tanıma) ve doküman çeviri araçları içeren AI destekli Flutter uygulaması.',
+        'projects.collaborativeTodo.title': 'Collaborative Todo App',
+        'projects.collaborativeTodo.description': 'Kayıt olma, giriş yapma, arkadaş ekleme ve görev paylaşımı sunar. TypeScript ve Firebase ile Notion benzeri bir sayfa sistemine genişletilebilir.',
+        'sections.otherProjects': 'Diğer Projeler',
+        'badges.script': 'Script',
+        'projects.lectureFetcher.title': 'Lecture Content Fetcher',
+        'projects.lectureFetcher.description': 'Arel UZEM\'e giriş yapar, derslerdeki indirilebilir içerikleri tarar ve yeni dosyaları uygun yerel klasörlere otomatik olarak indirir.',
+        'projects.vulnerabilityScanner.title': 'Vulnerability Scanner',
+        'projects.vulnerabilityScanner.description': 'Whois ve IP lookup, path scanning, reverse lookup, OWASP Top 10 taraması (SQL injection, XSS vb.) yapar. Tüm bulguları içeren bir Markdown raporu oluşturur.',
+        'badges.game': 'Oyun',
+        'projects.arcadeGames.title': 'Arcade Games Super App',
+        'projects.arcadeGames.description': 'Klasik arcade oyunlarını Python ile yeniden geliştiren super app: Space Invaders, Snake, Pacman, Tetris ve Flappy Bird.',
+        'projects.turkeyInvaders.title': 'turkeyInvaders',
+        'projects.turkeyInvaders.description': 'Klasik Space Invaders arcade oyununun “son derece farklı” bir versiyonu.',
+        'sections.contact': 'İletişime Geçin',
+        'footer.rights': 'Tüm hakları saklıdır.',
+        'aria.toggleTheme': 'Temayı değiştir',
+        'aria.toggleNavigation': 'Gezinmeyi aç veya kapat'
+      };
+
+      const englishCopy = new Map(
+        [...document.querySelectorAll('[data-i18n]')].map(element => [element.dataset.i18n, element.textContent])
+      );
+      const englishAriaCopy = new Map(
+        [...document.querySelectorAll('[data-i18n-aria]')].map(element => [element.dataset.i18nAria, element.getAttribute('aria-label')])
+      );
+      const metadata = {
+        en: {
+          title: 'Sefa Ağardan | g4stly',
+          description: 'Portfolio of Sefa Ağardan — Backend Engineer specializing in Spring Boot, AI/CV pipelines, and scalable system design.',
+          ogDescription: 'Backend Engineer — Spring Boot, AI/CV, scalable systems.',
+          languageSwitcher: 'Language selection'
+        },
+        tr: {
+          title: 'Sefa Ağardan | g4stly',
+          description: 'Sefa Ağardan\'ın portfolyosu — Spring Boot, AI/CV pipeline\'ları ve ölçeklenebilir sistem tasarımı konusunda uzmanlaşmış Backend Engineer.',
+          ogDescription: 'Backend Engineer — Spring Boot, AI/CV, ölçeklenebilir sistemler.',
+          languageSwitcher: 'Dil seçimi'
+        }
+      };
+
+      const languageButtons = document.querySelectorAll('[data-language]');
+      const languageSwitcher = document.querySelector('.language-switcher');
+
+      function applyLanguage(language) {
+        const isTurkish = language === 'tr';
+        document.documentElement.lang = language;
+        document.documentElement.dir = 'ltr';
+
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.dataset.i18n;
+          element.textContent = isTurkish ? (turkishTranslations[key] || englishCopy.get(key)) : englishCopy.get(key);
+        });
+        document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+          const key = element.dataset.i18nAria;
+          element.setAttribute('aria-label', isTurkish ? (turkishTranslations[key] || englishAriaCopy.get(key)) : englishAriaCopy.get(key));
+        });
+
+        const pageMetadata = metadata[language];
+        document.title = pageMetadata.title;
+        document.getElementById('meta-description').setAttribute('content', pageMetadata.description);
+        document.getElementById('og-description').setAttribute('content', pageMetadata.ogDescription);
+        languageSwitcher.setAttribute('aria-label', pageMetadata.languageSwitcher);
+        languageButtons.forEach(button => {
+          const selected = button.dataset.language === language;
+          button.setAttribute('aria-pressed', String(selected));
+          button.setAttribute('aria-label', button.dataset.language === 'en' ? 'English' : 'Türkçe');
+        });
+      }
+
+      const savedLanguage = localStorage.getItem('language');
+      const initialLanguage = savedLanguage === 'tr' ? 'tr' : 'en';
+      applyLanguage(initialLanguage);
+      languageButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const language = button.dataset.language;
+          localStorage.setItem('language', language);
+          applyLanguage(language);
+        });
+      });
+
       document.getElementById('year').textContent = new Date().getFullYear();
 
       // Theme toggle — default dark

@@ -87,6 +87,36 @@ a {
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ─── Theme Toggle ─────────────────────────────── */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.05);
+}
+.language-switcher button {
+  width: 29px;
+  height: 26px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  transition: color var(--transition), background var(--transition);
+}
+.language-switcher button:hover { color: #fff; }
+.language-switcher button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.language-switcher button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--accent);
+}
 .theme-toggle { display: flex; align-items: center; }
 #theme-toggle-btn {
   background: var(--accent);
