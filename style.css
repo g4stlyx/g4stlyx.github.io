@@ -398,6 +398,7 @@ nav > a:hover, .dropdown-toggle:hover {
   color: var(--text-muted);
 }
 .career-role span, .career-org-divider { color: var(--accent); }
+.career-role-muted span { color: inherit; }
 .career-period { white-space: nowrap; color: var(--accent); }
 .career-location { margin-bottom: 0.8rem; }
 .career-location i { color: var(--accent); margin-right: 0.25rem; }
